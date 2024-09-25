@@ -22,19 +22,19 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #151515; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ffc451; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: rgb(255, 241, 0); /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #312f2f; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.905);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffc451; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #333;  /* The default color of the main navmenu links */
+  --nav-hover-color: #919191; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffc451; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-color: #333; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #919191; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -143,7 +143,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(0, 0, 0, 0.8);
+  --background-color: rgba(255, 255, 255, 1);
   --heading-color: #ffffff;
   --contrast-color: #ffffff;
   color: var(--default-color);
@@ -176,19 +176,18 @@ h6 {
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
-  color: var(--contrast-color);
+  color: #333;
   font-size: 14px;
   padding: 8px 30px;
-  margin: 0 0 0 30px;
-  border-radius: 4px;
+  border-radius: 15px;
   transition: 0.3s;
-  border: 2px solid var(--accent-color);
+  background: var(--accent-color);
 }
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--default-color);
-  background: var(--accent-color);
+  background: #FFDD00;
 }
 
 @media (max-width: 1200px) {
@@ -207,20 +206,20 @@ h6 {
   }
 }
 
-.scrolled .header {
-  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
-}
+/* .scrolled .header {
+  box-shadow: 0px 0 18px rgba(255, 255, 255, 1);
+} */
 
 /* Index Page Header
 ------------------------------*/
 .index-page .header {
-  --background-color: rgba(0, 0, 0, 0);
+  --background-color: rgba(255, 255, 255, 1);
 }
 
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: rgba(0, 0, 0, 0.8);
+  --background-color: rgba(255, 255, 255, 1);
 }
 
 /*--------------------------------------------------------------
@@ -271,7 +270,6 @@ h6 {
   }
 
   .navmenu li:hover>a,
-  .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
   }
@@ -279,7 +277,7 @@ h6 {
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
-    background: var(--nav-dropdown-background-color);
+    background: rgba(255, 255, 255, 0.8);
     display: block;
     position: absolute;
     visibility: hidden;
@@ -287,9 +285,9 @@ h6 {
     top: 130%;
     opacity: 0;
     transition: 0.3s;
-    border-radius: 0;
     z-index: 99;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1); */
+    border-radius: 15px;
   }
 
   .navmenu .dropdown ul li {
@@ -315,7 +313,7 @@ h6 {
 
   .navmenu .dropdown:hover>ul {
     opacity: 1;
-    top: 100%;
+    top: 130%;
     visibility: visible;
   }
 

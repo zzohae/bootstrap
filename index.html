@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="utf-8">
@@ -9,13 +9,14 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="./assets/img/icon.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <!-- <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,15 +26,10 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css?ver=<?php echo time(); ?>" rel="stylesheet">
+  <link rel="stylesheet" href="chy/mycss.css">
+  <script src="./chy/myjs.js"></script>
 
-  <!-- =======================================================
-  * Template Name: Gp
-  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-  * Updated: Aug 15 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -41,43 +37,31 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">GP</h1>
-        <span>.</span>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0 col-2">
+        <!-- img로 svg를 넣기: 반드시 html5 -->
+        <img class="logo" src="./assets/img/logo.svg" alt="리턴잇">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="#hero" class="active">잇그린 소개<br></a></li>
+          <li class="dropdown"><a href="#"><span>리턴잇 서비스</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="#">배달앱 주문방법</a></li>
+              <li><a href="#">이용 후 반납방법</a></li>
+              <li><a href="#">서비스 지역</a></li>
             </ul>
           </li>
+          <li><a href="#services">리턴잇 사장님</a></li>
+          <li><a href="#portfolio">기업/행사</a></li>
+          <li><a href="#team">블로그</a></li>
+
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+      <a class="btn-getstarted" href="index.html#about">문의하기</a>
 
     </div>
   </header>
@@ -93,12 +77,90 @@
 
         <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
           <div class="col-xl-6 col-lg-8">
-            <h2>Powerful Digital Solutions With GP<span>.</span></h2>
+            <h2>배달음식도 다회용기로,<br>리턴잇</h2>
             <p>We are team of talented digital marketers</p>
           </div>
+          <div class="col-lg-8" style="width: 50%; height: auto; border: 10px solid red;">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="mb-3">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="ordertype" value="배달" onclick="showInput('delivery, deliveryapp')" checked> 배달
+                </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="ordertype" value="B2B 정기대여" onclick="showInput('b2b, deliveryapp')"> B2B 정기대여
+                </label>
+              </div>
+
+              <div id="delivery" class="row gy-4">
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="가게 이름" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" name="location" class="form-control" placeholder="주소" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="text" class="form-control" name="name2" placeholder="사장님 성함" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="subject" placeholder="전화번호" required="">
+                </div>
+
+                <div id="deliveryapp">
+                  <h4>가게가 등록된 배달앱</h4>
+                  <label class="form-check-label col-md-12 d-flex justify-content-center align-items-center">
+                    <input type="checkbox" id="app-baemin" value="배민"> 배달의 민족(일반)
+                    <input type="checkbox" id="app-baemin1" value="배민1" class="ms-3"> 배민1
+                    <input type="checkbox" id="app-yogiyo" value="요기요" class="ms-3"> 요기요
+                    <input type="checkbox" id="app-coupang" value="쿠팡이츠" class="ms-3"> 쿠팡이츠
+                    <input type="checkbox" id="app-others" value="기타" class="ms-3" onclick="toggleOtherInput()"> 기타 <input type="text" id="otherInput" class="form-control d-none" style="width: auto;">
+                  </label>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">빠른 문의하기</button>
+                </div>
+              </div>
+              <!-- <div id="b2b" class="row gy-4 d-none">
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="가게 이름" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" name="location" class="form-control" placeholder="주소" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="이메일" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="subject" placeholder="전화번호" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">빠른 문의하기</button>
+                </div>
+              </div> -->
+            </form>
+          </div><!-- End Contact Form -->
         </div>
 
-        <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <!-- <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
           <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <i class="bi bi-binoculars"></i>
@@ -129,7 +191,7 @@
               <h3><a href="">Nemos Enimade</a></h3>
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -821,37 +883,7 @@
 
           </div>
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
+          
 
         </div>
 
