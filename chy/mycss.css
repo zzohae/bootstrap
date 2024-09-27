@@ -7,3 +7,23 @@
 * {
   font-family: 'Pretendard' !important;
 }
+#stats div.stats-item div span.counter-unit {
+  color: var(--heading-color);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#statswrap div {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#statswrap img {
+  height: 100%;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}

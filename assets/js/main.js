@@ -163,10 +163,8 @@
 
   });
 
-  /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
+
+
 
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
