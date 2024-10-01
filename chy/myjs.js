@@ -52,5 +52,15 @@ window.addEventListener('load', function(){
 
   statsitem.innerHTML = mystats;
 
- new PureCounter();
+  new PureCounter();
+
+  const clientsswiper = this.document.querySelector("#clients div.swiper div.swiper-wrapper");
+
+  let mybrands = '';
+
+  for ( x of clientsdata ){
+    mybrands += `<div class="swiper-slide"><img src="assets/img/clients/${x.brandlogo}.png" class="img-fluid" alt="${x.brandname}"></div>`
+  }
+
+  clientsswiper.innerHTML = mybrands;
 })
