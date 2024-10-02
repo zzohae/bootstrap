@@ -1,26 +1,23 @@
-/**
-* Template Name: Gp
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Updated: Aug 15 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  font-family: 'Pretendard' !important;
+}
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Pretendard", "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Pretendard",  sans-serif;
+  --nav-font: "Pretendard",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #333; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #151515; /* Color for headings, subheadings and title throughout the website */
   --accent-color: rgb(255, 241, 0); /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -745,7 +742,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 50px 0;
   scroll-margin-top: 80px;
   overflow: clip;
 }
@@ -808,7 +805,7 @@ section,
   justify-content: center;
 }
 
-.hero img {
+.hero video {
   position: absolute;
   inset: 0;
   display: block;
@@ -937,7 +934,7 @@ section,
 .clients .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
-  filter: grayscale(100);
+  /* filter: grayscale(100); */
 }
 
 .clients .swiper-slide img:hover {
@@ -1281,20 +1278,20 @@ section,
 }
 
 .testimonials .testimonial-item {
-  text-align: center;
+  text-align: justify;
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 100px;
+  width: 50px;
   border-radius: 50%;
   border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .testimonials .testimonial-item h3 {
   font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
+  font-weight: lighter;
+  /* margin: 10px 0 5px 0; */
 }
 
 .testimonials .testimonial-item h4 {
@@ -1334,8 +1331,8 @@ section,
 }
 
 .testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
+  font-weight: normal;
+  word-break: break-all;
 }
 
 .testimonials .swiper-wrapper {

@@ -18,7 +18,7 @@ window.addEventListener('load', function(){
 
   for ( x of services ){
     myservices +=
-    `<div class="col-lg-6 col-md-3" data-aos="fade-up" data-aos-delay="${x.delay}">
+    `<div class="col-lg-6" data-aos="fade-up" data-aos-delay="${x.delay}">
       <div class="service-item position-relative" style="background: url(${x.bgsrc}) no-repeat center; background-size: cover;">
                 <h3>${x.h3text}</h3>
                 <p>${x.ptext}</p>
@@ -63,4 +63,25 @@ window.addEventListener('load', function(){
   }
 
   clientsswiper.innerHTML = mybrands;
+
+  const reviews = this.document.querySelector("#testimonials .swiper-wrapper");
+
+  let myreviews = '';
+
+  for ( x of newreviews){
+    myreviews +=
+    `<div class="swiper-slide">
+      <div class="testimonial-item">
+        <div class="d-flex align-items-center mb-2">
+          <img src="${x.image}" class="testimonial-img" alt="${x.owner} 후기">
+          <h3 class="mb-0 ms-3">${x.owner}</h3>
+        </div>
+        <p class="w-100">
+          ${x.reviewtext}
+        </p>
+      </div>
+    </div>`
+  }
+
+  reviews.innerHTML = myreviews;
 })

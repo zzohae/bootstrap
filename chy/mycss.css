@@ -7,6 +7,10 @@
 * {
   font-family: 'Pretendard' !important;
 }
+#header{
+  border-bottom: 1px solid #ddd;
+}
+
 #stats div.stats-item div span.counter-unit {
   color: var(--heading-color);
   font-size: 24px;
@@ -39,3 +43,45 @@
 #services .btn:hover{
   background-color: #FFDD00;
 } */
+
+#aboutbtns a,
+#aboutbtns a:focus {
+  display: inline-block;
+  color: #333;
+  font-size: 14px;
+  padding: 20px 0;
+  border-radius: 15px;
+  transition: 0.3s;
+  background: #ddd;
+  text-align: center;
+}
+
+#aboutbtns a:hover,
+#aboutbtns a:focus:hover {
+  color: var(--default-color);
+  background: rgb(255, 253, 222);
+}
+#clients {
+  padding-top: 0;
+}
+
+#clients > div > h4 {
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+}
+
+#news ul, #news li {
+  list-style: none;
+}
+#news li {
+  padding: .5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+#news li a {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--default-color);
+}
+#news .container .row .col-lg-6 {
+  border-right: 1px solid #ddd;
+}
