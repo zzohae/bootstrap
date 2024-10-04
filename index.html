@@ -50,7 +50,11 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">문의하기</a>
+      <div>
+        <a class="btn-getstarted" href="https://app.returnit.co.kr/">반납하기</a>
+        <a class="btn-getstarted" href="index.html#about">문의하기</a>
+      </div>
+      
 
     </div>
   </header>
@@ -70,7 +74,7 @@
             <p>We are team of talented digital marketers</p>
           </div>
 
-          <div class="col-lg-4" style="text-align: left;">
+          <div class="col-lg-4 d-none d-lg-block" style="text-align: left;">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
               data-aos-delay="200">
               <div class="mb-3" id="order-type">
@@ -273,14 +277,18 @@
     <section id="news" class="section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6 pb-3">
             <h3>잇그린 뉴스</h3>
             <ul class="content p-0 m-0">
-              <li><span>2024.01 매일경제</span><a href="https://www.mk.co.kr/news/it/10925430" class="d-block">잇그린, 배달앱 다회용기 서비스로 환경표지 인증 획득</a></li>
-              <li><span>2024.01 매일경제</span><a href="https://www.mk.co.kr/news/it/10925430" class="d-block">잇그린, 배달앱 다회용기 서비스로 환경표지 인증 획득</a></li>
+
             </ul>
           </div>
-          <div class="col-lg-6" style="border: 1px solid blue;"></div>
+          <div class="col-lg-6 pb-3">
+            <h3>블로그</h3>
+            <ul class="content p-0 m-0">
+
+            </ul>
+          </div>
         </div>
         
       </div>
@@ -304,8 +312,12 @@
                 "type": "bullets",
                 "clickable": true
               },
+              "autoplay": {
+                "delay": 4000,
+                "disableOnInteraction": false
+              },
               "breakpoints": {
-                "480": {
+                "576": {
                   "slidesPerView": 2,
                   "spaceBetween": 60
                 },
@@ -316,6 +328,7 @@
               }
             }
           </script>
+          <h4 class="text-center mb-4">잇그린 사장님들의 솔직 후기</h4>
           <div class="swiper-wrapper">
 
           </div>
@@ -326,60 +339,6 @@
 
     </section><!-- /Testimonials Section -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Contact Us</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-            frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -387,56 +346,38 @@
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">GP</span>
+          <div class="col-lg-4 col-6 footer-about">
+            <a href="index.html" class="logo">
+              <span class="sitename"><img src="./assets/img/footerlogo.png" alt="잇그린" id="footer-logo"></span>
             </a>
-            <div class="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
-            </div>
-            <div class="social-links d-flex mt-4">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
+            <div class="social-links ms-1 d-inline-block">
               <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
+              <a href=""><i class="bi bi-youtube"></i></a>
+              <a href="" class="naverblog"><img src="./assets/img/naverblog.svg" alt="네이버 블로그"></a>
+            </div>
+            <div class="footer-contact pt-3">
+              <p>(주)잇그린 | 대표 김선 | 서울특별시 강남구 봉은사로 24길 46</p>
+              <p>사업자등록번호 527-87-01859</p>
+              <p>통신판매업 신고번호 제 2021-서울서초-1075</p>
+              <p>개인정보보호책임자 : 백선웅</p>
+              <p><strong>Phone:</strong> <span>(+82)2-1670-0916</span></p>
+              <p><strong>&copy; 2024 itgreen. Co.,Ltd.</strong></p>
+            </div>
+            <div class="footer-links">
+              <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">사업자정보확인</a></li>
+              </ul>
             </div>
           </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
+          <div class="col-lg-4 col-6 footer-links customer-service">
+            <h4>고객센터</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Privacy policy</a></li>
+              <li>전화: 1670-0916</li>
+              <li>이메일: info@itgreen.co</li>
+              <li><a href="https://pf.kakao.com/_QEPAb">카카오톡: 리턴잇 사장님</a></li>
+              <li><a href="https://pf.kakao.com/_xfBFHK">카카오톡: 리턴잇 고객센터</a></li>
             </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-12 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe">
-              </div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-            </form>
           </div>
 
         </div>
@@ -445,7 +386,6 @@
 
     <div class="copyright">
       <div class="container text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">GP</strong> <span>All Rights Reserved</span></p>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you've purchased the pro version. -->
@@ -481,6 +421,8 @@
   <script src="./data/stats.js"></script>
   <script src="./data/clientsswiper.js"></script>
   <script src="./data/testimonialswiper.js"></script>
+  <script src="./data/itgreennews.js"></script>
+  <script src="./data/itgreenblog.js"></script>
   
   <script src="./chy/myjs.js"></script>
   <script src="assets/js/main.js"></script>

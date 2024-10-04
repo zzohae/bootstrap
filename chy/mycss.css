@@ -11,6 +11,16 @@
   border-bottom: 1px solid #ddd;
 }
 
+#header a.btn-getstarted:first-child,
+#header a.btn-getstarted:first-child:focus {
+  background-color: #ddd;
+}
+
+#header a.btn-getstarted:first-child:hover,
+#header a.btn-getstarted:first-child:focus:hover {
+  background: var(--accent-color);
+}
+
 #stats div.stats-item div span.counter-unit {
   color: var(--heading-color);
   font-size: 24px;
@@ -73,6 +83,13 @@
 #news ul, #news li {
   list-style: none;
 }
+#news h3 {
+  font-weight: 700;
+  &:after{
+    background: ;
+  }
+}
+
 #news li {
   padding: .5rem 0;
   border-bottom: 1px solid #ddd;
@@ -82,6 +99,37 @@
   font-weight: 600;
   color: var(--default-color);
 }
-#news .container .row .col-lg-6 {
-  border-right: 1px solid #ddd;
+#news li span {
+  color: #666;
+  font-weight: 300;
+}
+
+#footer-logo {
+  width: 100px;
+}
+
+.naverblog img {
+  width: 20px;
+}
+
+#footer .customer-service ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+#footer .customer-service a {
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .customer-service a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

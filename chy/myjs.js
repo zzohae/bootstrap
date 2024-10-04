@@ -11,6 +11,7 @@ window.addEventListener('load', function(){
   }
 
   mynavi.innerHTML = mytag;
+  //=========================
 
   const itemservices = this.document.querySelector("#services div.container div");
 
@@ -27,7 +28,7 @@ window.addEventListener('load', function(){
   }
 
   itemservices.innerHTML = myservices;
-
+  //=========================
 
   const statsitem = this.document.querySelector("#statswrap");
 
@@ -53,6 +54,7 @@ window.addEventListener('load', function(){
   statsitem.innerHTML = mystats;
 
   new PureCounter();
+  //=========================
 
   const clientsswiper = this.document.querySelector("#clients div.swiper div.swiper-wrapper");
 
@@ -63,6 +65,7 @@ window.addEventListener('load', function(){
   }
 
   clientsswiper.innerHTML = mybrands;
+  //=========================
 
   const reviews = this.document.querySelector("#testimonials .swiper-wrapper");
 
@@ -76,7 +79,7 @@ window.addEventListener('load', function(){
           <img src="${x.image}" class="testimonial-img" alt="${x.owner} 후기">
           <h3 class="mb-0 ms-3">${x.owner}</h3>
         </div>
-        <p class="w-100">
+        <p>
           ${x.reviewtext}
         </p>
       </div>
@@ -84,4 +87,27 @@ window.addEventListener('load', function(){
   }
 
   reviews.innerHTML = myreviews;
+  //=========================
+
+  const newslist = this.document.querySelector("#news .container .row div:first-child ul")
+  let mynews = '';
+
+  for ( x of newsdata ){
+    mynews +=
+    `<li><span>${x.date}</span><a href="${x.link}" class="d-block text-truncate">${x.title}</a></li>`
+  }
+
+  newslist.innerHTML = mynews;
+  
+  //=========================
+
+  const bloglist = this.document.querySelector("#news .container .row div:last-child ul")
+  let myblog = '';
+
+  for ( x of blogdata ){
+    myblog +=
+    `<li><span>${x.date}</span><a href="${x.link}" class="d-block text-truncate">${x.title}</a></li>`
+  }
+
+  bloglist.innerHTML = myblog
 })
