@@ -109,5 +109,5 @@ window.addEventListener('load', function(){
     `<li><span>${x.date}</span><a href="${x.link}" class="d-block text-truncate">${x.title}</a></li>`
   }
 
-  bloglist.innerHTML = myblog
+  bloglist.innerHTML = myblog;
 })
