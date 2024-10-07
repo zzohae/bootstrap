@@ -152,7 +152,6 @@
 .btn-cta {
   display: inline-block;
   background-color: var(--accent-color);
-  border-radius: 100px;
   color: #333;
   font-size: 24px;
   font-weight: 600;
@@ -194,12 +193,34 @@
   margin-top: 0;
 }
 
+.form-control {
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
 .form-control:focus {
   border-color: var(--accent-color);
+  background: transparent;
   box-shadow: none;
 }
+
+.form-control input {
+  color: #fff;
+}
+
 #other-input {
   display: inline-block;
   width: auto;
   padding: 0 .3rem;
+}
+
+#submit {
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  border: none;
+  color: #333;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
