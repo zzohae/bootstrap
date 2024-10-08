@@ -37,6 +37,9 @@
 .scrolled #header .navmenu .active:focus {
   color: var(--nav-dropdown-hover-color);
 }
+.scrolled #header .logo {
+  filter: invert(0);
+}
 
 #footer #footer-logo {
   width: 100px;

@@ -30,7 +30,8 @@
   border: none;
   color: #333;
   font-size: 24px;
-  padding: 16px 24px;
+  font-weight: 600;
+  padding: 12px 24px;
   border-radius: 20px;
 }
 
@@ -146,8 +147,18 @@
   font-weight: bolder;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 768px) {
+  #cta div h2 {
+    font-size: 32px !important;
+  }
+}
 #cta div h4 {
   text-shadow: 0 0px 6px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 576px) {
+  #cta div h4 {
+    font-size: 18px !important;
+  }
 }
 #cta .btn-cta {
   display: inline-block;
@@ -162,15 +173,4 @@
 #cta .btn-cta:hover {
   background-color: #FFDD00;
   color: #333;
-}
-
-@media (max-width: 768px) {
-  #cta h2 {
-    font-size: 32px;
-  }
-}
-@media (max-width: 576px) {
-  #cta h4 {
-    font-size: 18px;
-  }
 }
