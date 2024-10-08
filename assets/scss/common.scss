@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Pretendard' !important;
+}
+
+// 커스텀 공통 클래스
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// header
+#header {
+  a.btn-getstarted {
+    &:first-child,
+    &:first-child:focus {
+      background-color: #ddd;
+    }
+
+    &:first-child:hover,
+    &:first-child:focus:hover {
+      background: var(--accent-color);
+    }
+  }
+  .logo {
+    filter: invert(1);
+  }
+}
+
+.scrolled {
+  #header {
+    background-color: var(--background-color);
+    color: var(--default-color);
+    border-bottom: 1px solid #ddd;
+
+    .navmenu {
+      a,
+      a:focus {
+        color: var(--nav-color);
+      }
+
+      li:hover > a,
+      .active:focus {
+        color: var(--nav-dropdown-hover-color);
+      }
+    }
+  }
+}
+
+// footer
+#footer {
+  #footer-logo {
+    width: 100px;
+  }
+
+  .naverblog img {
+    width: 20px;
+  }
+
+  .customer-service {
+    ul li {
+      margin-bottom: 5px;
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    a {
+      color: #fff;
+      font-size: 14px;
+
+      &:hover {
+        color: var(--accent-color);
+        text-decoration: underline;
+      }
+    }
+  }
+}

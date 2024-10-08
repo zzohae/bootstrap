@@ -1,0 +1,224 @@
+#hero {
+  form {
+    h4 {
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 15px;
+      margin-top: 0;
+    }
+
+    .form-control {
+      background: transparent;
+      border-color: #fff;
+      color: #fff;
+
+      &:focus {
+        border-color: var(--accent-color);
+        background: transparent;
+        box-shadow: none;
+        color: #fff;
+      }
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    .other-input {
+      display: inline-block;
+      width: auto;
+      padding: 0 0.3rem;
+    }
+  }
+
+  #submit {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    padding: 16px 24px;
+    border-radius: 20px;
+  }
+}
+
+#formB {
+  select {
+    option {
+      color: #666;
+    }
+  }
+}
+
+.dateselector {
+  cursor: pointer;
+
+  input {
+    position: relative;
+    background: url('../assets/img/main/calendar-check.svg') no-repeat right 10px center;
+
+    &::-webkit-calendar-picker-indicator,
+    &::-webkit-inner-spin-button {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      appearance: none;
+      width: 100%;
+    }
+  }
+}
+
+#stats {
+  div.stats-item {
+    div span.counter-unit {
+      color: var(--heading-color);
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+}
+
+#statswrap {
+  div {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  img {
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+#awards {
+  img {
+    width: 100%;
+  }
+}
+
+#aboutbtns {
+  a,
+  a:focus {
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
+    padding: 20px 0;
+    border-radius: 15px;
+    transition: 0.3s;
+    background: #ddd;
+    text-align: center;
+  }
+
+  a:hover,
+  a:focus:hover {
+    color: var(--default-color);
+    background: rgb(255, 253, 222);
+  }
+}
+
+#clients {
+  padding-top: 0;
+
+  > div > h4 {
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+  }
+}
+
+#news {
+  ul, li {
+    list-style: none;
+  }
+
+  h3 {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+    a {
+      color: var(--default-color);
+      display: flex;
+      align-items: center;
+    }
+
+    i {
+      color: #919191;
+      font-size: 18px;
+      margin-left: 0.5rem;
+    }
+  }
+
+  li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+
+    a {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--default-color);
+    }
+
+    span {
+      color: #666;
+      font-weight: 300;
+    }
+  }
+}
+
+#cta {
+  padding-bottom: 0;
+
+  div {
+    div {
+      padding: 300px 0;
+    }
+
+    h2 {
+      font-size: 50px;
+      font-weight: bolder;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h4 {
+      text-shadow: 0 0px 6px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .btn-cta {
+    display: inline-block;
+    width: 200px;
+    background-color: var(--accent-color);
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px 0;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: #FFDD00;
+      color: #333;
+    }
+  }
+}
+
+
+// 미디어 쿼리
+@media (max-width: 768px) {
+  #cta h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  #cta h4 {
+    font-size: 18px;
+  }
+}

@@ -110,4 +110,10 @@ window.addEventListener('load', function(){
   }
 
   bloglist.innerHTML = myblog;
+
+  const dateInput = document.querySelector('.dateselector input');
+
+  document.querySelector('.dateselector').addEventListener('click', () => {
+    dateInput.focus();
+  });
 })

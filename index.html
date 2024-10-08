@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="./assets/img/icon.ico" rel="icon">
+  <link href="./assets/img/common/icon.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -24,8 +24,9 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css?ver=<?php echo time(); ?>" rel="stylesheet">
-  <link rel="stylesheet" href="chy/mycss.css">
+  <link href="./assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/common.min.css">
+  <link rel="stylesheet" href="./assets/css/mainpage.min.css">
 
 </head>
 
@@ -36,7 +37,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0 col-2">
         <!-- img로 svg를 넣기: 반드시 html5 -->
-        <img class="logo" src="./assets/img/logo.svg" alt="리턴잇">
+        <img class="logo" src="./assets/img/common/logo.svg" alt="리턴잇">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -60,9 +61,9 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <video autoplay muted playsinline loop>
+      <!-- <video autoplay muted playsinline loop>
         <source src="https://framerusercontent.com/assets/Slgpw37RrKPLgYDFgTJIFYU9mE.mp4">
-      </video>
+      </video> -->
 
       <div class="container">
 
@@ -91,10 +92,10 @@
                   <div class="col-md-12 mb-1">
                     <input type="text" class="form-control" placeholder="주소" required>
                   </div>
-                  <div class="col-md-6 mb-1">
+                  <div class="col-md-6 mb-1 pe-md-0">
                     <input type="text" class="form-control" placeholder="사장님 성함" required>
                   </div>
-                  <div class="col-md-6 mb-1">
+                  <div class="col-md-6 mb-1 ps-md-1">
                     <input type="text" class="form-control" placeholder="전화번호" required>
                   </div>
                 </div>
@@ -102,14 +103,14 @@
                 <div class="mb-3">
                   <h4>가게가 등록된 배달앱</h4>
                   <div class="col-md-12">
-                    <input type="checkbox" name="app" value="B"> 배달의민족(일반)
-                    <input type="checkbox" name="app" value="B1" class="ms-3"> 배민1
-                    <input type="checkbox" name="app" value="Yo" class="ms-3"> 요기요
-                    <input type="checkbox" name="app" value="C" class="ms-3"> 쿠팡이츠
+                    <input type="checkbox" name="app" value="B" class="form-check-input"> 배달의민족(일반)
+                    <input type="checkbox" name="app" value="B1" class="ms-3 form-check-input"> 배민1
+                    <input type="checkbox" name="app" value="Yo" class="ms-3 form-check-input"> 요기요
+                    <input type="checkbox" name="app" value="C" class="ms-3 form-check-input"> 쿠팡이츠
                   </div>
-                  <div class="col-md-12 mb-2">
-                    <input type="checkbox" name="app" value="Others" class="me-1"> 기타
-                    <input type="text" id="other-input" class="form-control ms-1" placeholder="기타 입력">
+                  <div class="col-md-12 mt-2 mb-2">
+                    <input type="checkbox" name="app" value="Others" class="me-1 form-check-input"> 기타
+                    <input type="text" class="other-input form-control ms-1" placeholder="기타 입력">
                   </div>
                 </div>
 
@@ -127,7 +128,7 @@
                 <div class="row mb-3">
                   <div class="col-md-12 mb-1">
                     <select class="form-control position-relative" id="inquiryType" required>
-                      <option value="" disabled selected>문의 유형 선택</option>
+                      <option value="" disabled selected>문의 유형 선택 <span>▼</span></option>
                       <option value="B2B 정기대여">B2B 정기대여</option>
                       <option value="협업/마케팅 문의">협업/마케팅 문의</option>
                     </select>
@@ -135,10 +136,10 @@
                   <div class="col-md-12 mb-1">
                     <input type="text" class="form-control" placeholder="회사명" required>
                   </div>
-                  <div class="col-md-6 mb-1">
+                  <div class="col-md-6 mb-1 pe-md-0">
                     <input type="text" class="form-control" placeholder="담당자 이름" required>
                   </div>
-                  <div class="col-md-6 mb-1">
+                  <div class="col-md-6 mb-1 ps-md-1">
                     <input type="text" class="form-control" placeholder="전화번호" required>
                   </div>
                   <div class="col-md-12 mb-1">
@@ -161,13 +162,13 @@
                   <div class="col-md-12 mb-1">
                     <input type="text" class="form-control" placeholder="행사명" required>
                   </div>
-                  <div class="col-md-12 mb-1">
+                  <div class="col-md-12 mb-1 dateselector">
                     <input type="date" class="form-control" placeholder="행사 날짜 선택" required>
                   </div>
-                  <div class="col-md-6 mb-1">
+                  <div class="col-md-6 mb-1 pe-md-0">
                     <input type="text" class="form-control" placeholder="담당자 이름" required>
                   </div>
-                  <div class="col-md-6 mb-1">
+                  <div class="col-md-6 mb-1 ps-md-1">
                     <input type="text" class="form-control" placeholder="전화번호" required>
                   </div>
                   <div class="col-md-12 mb-1">
@@ -207,7 +208,7 @@
         <div class="row gy-4 align-items-center justify-content-between">
 
           <div class="col-lg-5">
-            <img src="assets/img/stats-img.jpg" alt="" class="img-fluid">
+            <img src="./assets/img/main/stats-img.jpg" alt="" class="img-fluid">
           </div>
 
           <div class="col-lg-6">
@@ -235,11 +236,11 @@
     <section id="awards">
       <div class="container" data-aos="fade-up">
         <div class="row justify-content-between justify-content-lg-center">
-          <div class="col-4 col-lg-3"><img src="./assets/img/awards/awards_1.png" alt="2022 생활폐기물 감량 · 자원순환 기여 서울시장 표창">
+          <div class="col-4 col-lg-3"><img src="./assets/img/main/awards/awards_1.png" alt="2022 생활폐기물 감량 · 자원순환 기여 서울시장 표창">
           </div>
-          <div class="col-4 col-lg-3"><img src="./assets/img/awards/awards_2.png" alt="2023 일회용품 감량 우수사업자 환경부장관 표창">
+          <div class="col-4 col-lg-3"><img src="./assets/img/main/awards/awards_2.png" alt="2023 일회용품 감량 우수사업자 환경부장관 표창">
           </div>
-          <div class="col-4 col-lg-3"><img src="./assets/img/awards/awards_3.png" alt="2024 한국환경산업기술원장 환경표지 인증 획득">
+          <div class="col-4 col-lg-3"><img src="./assets/img/main/awards/awards_3.png" alt="2024 한국환경산업기술원장 환경표지 인증 획득">
           </div>
         </div>
       </div>
@@ -283,7 +284,7 @@
             </ul>
             <div id="aboutbtns" class="col-md-12 d-flex justify-content-center justify-content-md-start flex-md-row">
               <a href="" class="col-3">배달앱 주문방법</a>
-              <a href="https://returnit-order.kr/" class="col-3 mx-3" target="_blank">리턴잇 사장님</a>
+              <a href="https://returnit-order.kr/" class="col-3 mx-2" target="_blank">리턴잇 사장님</a>
               <a href="" class="col-3">기업·행사 서비스</a>
             </div>
           </div>
@@ -343,7 +344,7 @@
             </ul>
           </div>
           <div class="col-lg-6 pb-3">
-            <h3>블로그 <i class="bi bi-chevron-right"></i></h3>
+            <h3><a href="https://www.returnit.kr/blog">블로그 <i class="bi bi-chevron-right"></i></a></h3>
             <ul class="content p-0 m-0">
 
             </ul>
@@ -402,10 +403,10 @@
       <div class="position-relative">
         <img src="assets/img/cta.jpg" alt="배경 이미지" class="position-absolute top-0 start-0 w-100 h-100"
           style="object-fit: cover;">
-        <div class="position-relative d-flex flex-column justify-content-center align-items-center text-center"
+        <div class="position-relative row justify-content-center align-items-center text-center"
           style="height: 100%; z-index: 1;">
           <h2 class="mb-3 text-white">쓰레기 없는 배달 문화<br>지속 가능한 순환 서비스</h2>
-          <h4 class="mb-5 text-white">다회용기 하나당 300개 이상의 일회용기가 사라집니다</h4>
+          <h4 class="mb-5 text-white">다회용기 하나당 <br class="d-sm-none">300개 이상의 일회용기가 사라집니다</h4>
           <a class="btn-cta" href="#">지금 문의하기</a>
         </div>
       </div>
@@ -419,12 +420,12 @@
         <div class="row gy-4">
           <div class="col-lg-4 col-6 footer-about">
             <a href="index.html" class="logo">
-              <span class="sitename"><img src="./assets/img/footerlogo.png" alt="잇그린" id="footer-logo"></span>
+              <span class="sitename"><img src="./assets/img/common/footerlogo.png" alt="잇그린" id="footer-logo"></span>
             </a>
             <div class="social-links ms-1 d-inline-block">
               <a href=""><i class="bi bi-instagram"></i></a>
               <a href=""><i class="bi bi-youtube"></i></a>
-              <a href="" class="naverblog"><img src="./assets/img/naverblog.svg" alt="네이버 블로그"></a>
+              <a href="" class="naverblog"><img src="./assets/img/common/naverblog.svg" alt="네이버 블로그"></a>
             </div>
             <div class="footer-contact pt-3">
               <p>(주)잇그린 | 대표 김선 | 서울특별시 강남구 봉은사로 24길 46</p>

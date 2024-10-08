@@ -193,6 +193,10 @@ h6 {
     padding: 6px 15px;
   }
 
+  #header a.btn-getstarted:first-child{
+    display: none;
+  }
+
   .header .navmenu {
     order: 3;
   }
