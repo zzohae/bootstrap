@@ -8,7 +8,7 @@
         <a href="/bootstrap/" class="logo">
           <span class="sitename"><img src="/bootstrap/assets/img/common/footerlogo.png" alt="잇그린" id="footer-logo"></span>
         </a>
-        <div class="social-links ms-1 d-inline-block">
+        <div class="social-links mt-1 mt-sm-0 ms-sm-1 d-sm-inline-block">
           <a href=""><i class="bi bi-instagram"></i></a>
           <a href=""><i class="bi bi-youtube"></i></a>
           <a href="" class="naverblog"><img src="/bootstrap/assets/img/common/naverblog.svg" alt="네이버 블로그"></a>
