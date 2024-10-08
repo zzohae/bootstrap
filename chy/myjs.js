@@ -110,10 +110,21 @@ window.addEventListener('load', function(){
   }
 
   bloglist.innerHTML = myblog;
+  //=========================
 
   const dateInput = document.querySelector('.dateselector input');
 
   document.querySelector('.dateselector').addEventListener('click', () => {
     dateInput.focus();
   });
+  //=========================
+
+  const newLink = document.createElement('a');
+  newLink.classList.add('more');
+  newLink.textContent = "+"
+  newLink.href = "#"
+  newLink.setAttribute('data-toggle', 'modal');
+  newLink.setAttribute('data-target', '#7step');
+  document.querySelector("#services > div:nth-child(2) > div > div:nth-child(4) > div").appendChild(newLink);
+
 })

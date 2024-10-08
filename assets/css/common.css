@@ -14,6 +14,25 @@
   text-overflow: ellipsis;
 }
 
+.more {
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--default-color);
+  font-size: 24px;
+  line-height: 50px;
+  font-weight: 600;
+  border-radius: 100px;
+  text-align: center;
+}
+.more:hover {
+  color: var(--default-color) !important;
+}
+
 #header a.btn-getstarted:first-child, #header a.btn-getstarted:first-child:focus {
   background-color: #ddd;
 }
