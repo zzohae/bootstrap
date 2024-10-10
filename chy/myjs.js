@@ -5,9 +5,11 @@ window.addEventListener('load', function(){
   let mytag = '';
 
   for ( x of navidata ){
-    mytag += `<li><a href="${x.href}"
+    mytag += `<li class="position-relative"><a href="${x.href}"
                             target = "${x._target}">
-                            ${x.atext}</a></li>`
+                            <img src="${x.icon}" class="img-fluid d-xl-none" alt="${x.atext}" />
+                            <span>${x.atext}</span></a>
+                            </li>`
   }
 
   mynavi.innerHTML = mytag;

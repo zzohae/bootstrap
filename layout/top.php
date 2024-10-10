@@ -40,7 +40,7 @@
         <?php include_once("./layout/svg/logo.html"); ?>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu d-flex">
         <ul>
 
         </ul>
