@@ -7,7 +7,7 @@
 }
 #hero form .form-control {
   background: transparent;
-  border-color: #fff;
+  border-color: #999;
   color: #fff;
 }
 #hero form .form-control:focus {
@@ -16,13 +16,34 @@
   box-shadow: none;
   color: #fff;
 }
-#hero form .form-control::placeholder {
+#hero form .form-control:placeholder {
+  color: #fff;
+}
+#hero form .form-control:-moz-placeholder {
+  color: #fff;
+}
+#hero form .form-control:-ms-input-placeholder {
+  color: #fff;
+}
+#hero form .form-control::-webkit-input-placeholder {
   color: #fff;
 }
 #hero form .other-input {
   display: inline-block;
   width: auto;
   padding: 0 0.3rem;
+}
+#hero form .other-input:placeholder {
+  color: #999;
+}
+#hero form .other-input:-moz-placeholder {
+  color: #999;
+}
+#hero form .other-input:-ms-input-placeholder {
+  color: #999;
+}
+#hero form .other-input::-webkit-input-placeholder {
+  color: #999;
 }
 #hero #submit {
   background-color: var(--accent-color);
@@ -44,7 +65,7 @@
 }
 .dateselector input {
   position: relative;
-  background: url("../assets/img/main/calendar-check.svg") no-repeat right 10px center;
+  background: url("/mybootstrap/assets/img/main/calendar-check.svg") no-repeat right 10px center !important;
 }
 .dateselector input::-webkit-calendar-picker-indicator, .dateselector input::-webkit-inner-spin-button {
   position: absolute;
@@ -89,6 +110,12 @@
   transition: 0.3s;
   background: #ddd;
   text-align: center;
+}
+@media (max-width: 768px) {
+  #aboutbtns a,
+  #aboutbtns a:focus {
+    padding: 10px;
+  }
 }
 #aboutbtns a:hover,
 #aboutbtns a:focus:hover {
@@ -139,8 +166,13 @@
 #cta {
   padding-bottom: 0;
 }
-#cta div div {
+#cta div .textcontent {
   padding: 300px 0;
+}
+@media (max-width: 576px) {
+  #cta div .textcontent {
+    padding: 100px 0;
+  }
 }
 #cta div h2 {
   font-size: 50px;
@@ -173,4 +205,9 @@
 #cta .btn-cta:hover {
   background-color: #FFDD00;
   color: #333;
+}
+
+.servicebtn {
+  right: 30px;
+  top: 30px;
 }

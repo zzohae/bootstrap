@@ -11,7 +11,7 @@
 
     .form-control {
       background: transparent;
-      border-color: #fff;
+      border-color: #999;
       color: #fff;
 
       &:focus {
@@ -21,7 +21,16 @@
         color: #fff;
       }
 
-      &::placeholder {
+      &:placeholder {
+        color: #fff;
+      }
+      &:-moz-placeholder {
+        color: #fff;
+      }
+      &:-ms-input-placeholder {
+        color: #fff;
+      }
+      &::-webkit-input-placeholder {
         color: #fff;
       }
     }
@@ -30,6 +39,18 @@
       display: inline-block;
       width: auto;
       padding: 0 0.3rem;
+      &:placeholder{
+        color: #999;
+      }
+      &:-moz-placeholder {
+        color: #999;
+      }
+      &:-ms-input-placeholder {
+        color: #999;
+      }
+      &::-webkit-input-placeholder {
+        color: #999;
+      }
     }
   }
 
@@ -58,7 +79,7 @@
 
   input {
     position: relative;
-    background: url('../assets/img/main/calendar-check.svg') no-repeat right 10px center;
+    background: url('/mybootstrap/assets/img/main/calendar-check.svg') no-repeat right 10px center !important;
 
     &::-webkit-calendar-picker-indicator,
     &::-webkit-inner-spin-button {
@@ -116,6 +137,10 @@
     transition: 0.3s;
     background: #ddd;
     text-align: center;
+
+    @media (max-width: 768px) {
+      padding: 10px;
+    }
   }
 
   a:hover,
@@ -178,8 +203,11 @@
   padding-bottom: 0;
 
   div {
-    div {
+    .textcontent {
       padding: 300px 0;
+      @media (max-width: 576px) {
+        padding: 100px 0;
+      }
     }
 
     h2 {
@@ -216,4 +244,9 @@
       color: #333;
     }
   }
+}
+
+.servicebtn {
+  right: 30px;
+  top: 30px;
 }

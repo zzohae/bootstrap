@@ -9,24 +9,24 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="/bootstrap/assets/img/common/icon.ico" rel="icon">
-  <link href="/bootstrap/assets/img/common/icon.ico" rel="apple-touch-icon">
+  <link href="/mybootstrap/assets/img/common/icon.ico" rel="icon">
+  <link href="/mybootstrap/assets/img/common/icon.ico" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link rel="stylesheet" as="style" crossorigin
     href="//cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
   <!-- Vendor CSS Files -->
-  <link href="/bootstrap/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/bootstrap/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="/bootstrap/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="/bootstrap/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="/bootstrap/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/mybootstrap/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/mybootstrap/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/mybootstrap/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/mybootstrap/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/mybootstrap/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="/bootstrap/assets/css/main.css?ver=<?php echo time(); ?>" rel="stylesheet">
-  <link rel="stylesheet" href="/bootstrap/assets/css/common.min.css">
-  <link rel="stylesheet" href="/bootstrap/assets/css/mainpage.min.css">
+  <link href="/mybootstrap/assets/css/main.css?ver=<?php echo time(); ?>" rel="stylesheet">
+  <link rel="stylesheet" href="/mybootstrap/assets/css/common.min.css">
+  <link rel="stylesheet" href="/mybootstrap/assets/css/mainpage.min.css">
 
 </head>
 
@@ -35,7 +35,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0 col-2">
+      <a href="index.html" class="logo me-lg-0 col-2">
         <!-- img로 svg를 넣기: 반드시 html5 -->
         <?php include_once("./layout/svg/logo.html"); ?>
       </a>

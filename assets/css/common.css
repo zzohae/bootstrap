@@ -16,8 +16,8 @@
 
 .more {
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 0;
+  top: 0;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -78,4 +78,11 @@
 #footer .customer-service a:hover {
   color: var(--accent-color);
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .h-1rem {
+    height: 1rem;
+    min-height: 24px;
+  }
 }

@@ -5,13 +5,13 @@
   <div class="container">
     <div class="row gy-4">
       <div class="col-lg-4 col-6 footer-about">
-        <a href="/bootstrap/" class="logo">
-          <span class="sitename"><img src="/bootstrap/assets/img/common/footerlogo.png" alt="잇그린" id="footer-logo"></span>
+        <a href="/mybootstrap/" class="logo">
+          <span class="sitename"><img src="/mybootstrap/assets/img/common/footerlogo.png" alt="잇그린" id="footer-logo"></span>
         </a>
         <div class="social-links mt-1 mt-sm-0 ms-sm-1 d-sm-inline-block">
           <a href=""><i class="bi bi-instagram"></i></a>
           <a href=""><i class="bi bi-youtube"></i></a>
-          <a href="" class="naverblog"><img src="/bootstrap/assets/img/common/naverblog.svg" alt="네이버 블로그"></a>
+          <a href="" class="naverblog"><img src="/mybootstrap/assets/img/common/naverblog.svg" alt="네이버 블로그"></a>
         </div>
         <div class="footer-contact pt-3">
           <p>(주)잇그린 | 대표 김선 | 서울특별시 강남구 봉은사로 24길 46</p>
@@ -63,28 +63,28 @@
 <div id="preloader"></div>
 
 <!-- Vendor JS Files -->
-<script src="/bootstrap/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/mybootstrap/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="/bootstrap/assets/vendor/php-email-form/validate.js"></script>
-<script src="/bootstrap/assets/vendor/aos/aos.js"></script>
-<script src="/bootstrap/assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="/bootstrap/assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="/bootstrap/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="/bootstrap/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="/bootstrap/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="/mybootstrap/assets/vendor/php-email-form/validate.js"></script>
+<script src="/mybootstrap/assets/vendor/aos/aos.js"></script>
+<script src="/mybootstrap/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="/mybootstrap/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="/mybootstrap/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/mybootstrap/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="/mybootstrap/assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
 <!-- Main JS File -->
-<script src="/bootstrap/data/navi.js"></script>
-<script src="/bootstrap/data/features.js"></script>
-<script src="/bootstrap/data/stats.js"></script>
-<script src="/bootstrap/data/clientsswiper.js"></script>
-<script src="/bootstrap/data/testimonialswiper.js"></script>
-<script src="/bootstrap/data/itgreennews.js"></script>
-<script src="/bootstrap/data/itgreenblog.js"></script>
+<script src="/mybootstrap/data/navi.js"></script>
+<script src="/mybootstrap/data/features.js"></script>
+<script src="/mybootstrap/data/stats.js"></script>
+<script src="/mybootstrap/data/clientsswiper.js"></script>
+<script src="/mybootstrap/data/testimonialswiper.js"></script>
+<script src="/mybootstrap/data/itgreennews.js"></script>
+<script src="/mybootstrap/data/itgreenblog.js"></script>
 
-<script src="/bootstrap/chy/myjs.js?ver=<?php echo time(); ?>"></script>
-<script src="/bootstrap/chy/form.js"></script>
-<script src="/bootstrap/assets/js/main.js?ver=<?php echo time(); ?>"></script>
+<script src="/mybootstrap/chy/myjs.js?ver=<?php echo time(); ?>"></script>
+<script src="/mybootstrap/chy/form.js"></script>
+<script src="/mybootstrap/assets/js/main.js?ver=<?php echo time(); ?>"></script>
 </body>
 
 </html>

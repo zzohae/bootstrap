@@ -61,7 +61,7 @@ window.addEventListener('load', function(){
   let mybrands = '';
 
   for ( x of clientsdata ){
-    mybrands += `<div class="swiper-slide"><img src="assets/img/clients/${x.brandlogo}.png" class="img-fluid" alt="${x.brandname}"></div>`
+    mybrands += `<div class="swiper-slide"><img src="/mybootstrap/assets/img/main/clients/${x.brandlogo}.png" class="img-fluid" alt="${x.brandname}"></div>`
   }
 
   clientsswiper.innerHTML = mybrands;
@@ -121,6 +121,7 @@ window.addEventListener('load', function(){
 
   const newLink = document.createElement('a');
   newLink.classList.add('more');
+  newLink.classList.add('servicebtn');
   newLink.textContent = "+"
   newLink.href = "#"
   newLink.setAttribute('data-toggle', 'modal');
