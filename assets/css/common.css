@@ -39,9 +39,6 @@
 #header a.btn-getstarted:first-child:hover, #header a.btn-getstarted:first-child:focus:hover {
   background: var(--accent-color);
 }
-#header .logo {
-  filter: invert(1);
-}
 #header img {
   width: 24px;
   height: 24px;
@@ -106,6 +103,14 @@
     border-radius: 50px;
   }
 }
+#index-page header .navmenu a,
+#index-page header .navmenu a:focus {
+  color: #fff;
+}
+#index-page header .logo {
+  filter: invert(1);
+}
+
 #footer #footer-logo {
   width: 100px;
 }

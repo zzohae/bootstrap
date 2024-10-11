@@ -47,9 +47,6 @@
       background: var(--accent-color);
     }
   }
-  .logo {
-    filter: invert(1);
-  }
   img {
     width: 24px;
     height: 24px;
@@ -121,6 +118,16 @@
     right: 3rem;
     bottom: 35px;
     border-radius: 50px;
+  }
+}
+// index page header
+#index-page header {
+  .navmenu a,
+  .navmenu a:focus {
+    color: #fff;
+  }
+  .logo {
+    filter: invert(1);
   }
 }
 

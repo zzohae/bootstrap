@@ -74,14 +74,6 @@
 <script src="/mybootstrap/assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
 <!-- Main JS File -->
-<script src="/mybootstrap/data/navi.js"></script>
-<script src="/mybootstrap/data/features.js"></script>
-<script src="/mybootstrap/data/stats.js"></script>
-<script src="/mybootstrap/data/clientsswiper.js"></script>
-<script src="/mybootstrap/data/testimonialswiper.js"></script>
-<script src="/mybootstrap/data/itgreennews.js"></script>
-<script src="/mybootstrap/data/itgreenblog.js"></script>
-
 <script src="/mybootstrap/chy/myjs.js?ver=<?php echo time(); ?>"></script>
 <script src="/mybootstrap/chy/form.js"></script>
 <script src="/mybootstrap/assets/js/main.js?ver=<?php echo time(); ?>"></script>

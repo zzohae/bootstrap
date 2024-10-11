@@ -30,7 +30,7 @@
 
 </head>
 
-<body class="faq">
+<body id="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -40,7 +40,7 @@
         <?php include_once("./layout/svg/logo.html"); ?>
       </a>
 
-      <nav id="navmenu" class="navmenu invisible">
+      <nav id="navmenu" class="navmenu d-flex">
         <ul>
 
         </ul>

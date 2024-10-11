@@ -135,15 +135,15 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(255, 255, 255, 1);
   --heading-color: #ffffff;
   --contrast-color: #ffffff;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0);
+  color: var(--nav-color);
+  background-color: var(--background-color);
   padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
   min-height: 60px;
+  border-bottom: 1px solid rgba(221, 221, 221, 0);
 }
 
 .header .logo {
@@ -196,20 +196,19 @@ h6 {
 
 }
 
-/* .scrolled .header {
-  box-shadow: 0px 0 18px rgba(255, 255, 255, 1);
-} */
 
 /* Index Page Header
 ------------------------------*/
-.index-page .header {
-  --background-color: rgba(255, 255, 255, 1);
+#index-page .header {
+  --background-color: rgba(255, 255, 255, 0);
+  --nav-color: #fff;
 }
 
 /* Index Page Header on Scroll
 ------------------------------*/
-.index-page.scrolled .header {
+#index-page.scrolled .header {
   --background-color: rgba(255, 255, 255, 1);
+  --nav-color: #333;
 }
 
 /*--------------------------------------------------------------
@@ -235,7 +234,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: #fff;
+    color: var(--nav-color);
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
@@ -773,7 +772,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: color-mix(in srgb, var(--background-color), transparent 50%);
   position: absolute;
   inset: 0;
   z-index: 2;
