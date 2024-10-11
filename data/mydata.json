@@ -1,0 +1,226 @@
+{
+  "navidata" : [
+  {
+    "atext": "잇그린 소개",
+    "href" : "#stats",
+    "_target": "",
+    "icon": "/mybootstrap/assets/img/common/mobilenav_1.svg"
+  },
+  {
+    "atext": "리턴잇 서비스",
+    "href" : "#services",
+    "_target": "",
+    "icon": "/mybootstrap/assets/img/common/mobilenav_2.svg"
+  },
+  {
+    "atext": "이용안내",
+    "href" : "#about",
+    "_target": "",
+    "icon": "/mybootstrap/assets/img/common/mobilenav_3.svg"
+  },
+  {
+    "atext": "잇그린 소식",
+    "href" : "#news",
+    "_target": "",
+    "icon": "/mybootstrap/assets/img/common/mobilenav_4.svg"
+  }
+  ],
+  "statsdata" : [
+  {
+    "imgurl": "/mybootstrap/assets/img/main/stats/stats1.png",
+    "dataend": 432,
+    "unit": "만 개+",
+    "spantext": "대체한 일회용품"
+  },
+  {
+    "imgurl": "/mybootstrap/assets/img/main/stats/stats2.png",
+    "dataend": 66,
+    "unit": "만 kg+",
+    "spantext": "폐기물 절감"
+  },
+  {
+    "imgurl": "/mybootstrap/assets/img/main/stats/stats3.png",
+    "dataend": 2,
+    "unit": "만 그루+",
+    "spantext": "나무 심은 효과"
+  },
+  {
+    "imgurl": "/mybootstrap/assets/img/main/stats/stats4.png",
+    "dataend": 313,
+    "unit": "만 kg+",
+    "spantext": "줄인 온실가스량"
+  }
+  ],
+  "servicesdata" : [
+  {
+    "bgsrc": "/mybootstrap/assets/img/main/features/1_easy.jpg",
+    "delay": "100",
+    "h3text": "간편한 음식물 처리",
+    "ptext": "이제는 남은 음식을 치우지 않아도 돼요<br>설거지 없이 뚜껑만 닫아 간편하게 식사를 마무리하세요"
+  },
+  {
+    "bgsrc": "/mybootstrap/assets/img/main/features/2_healthy.jpg",
+    "delay": "100",
+    "h3text": "건강한 다회용기",
+    "ptext": "환경호르몬 걱정 없이 위생적이고 건강하게<br>친환경 스테인리스 용기에 담긴 배달음식을 즐겨보세요"
+  },
+  {
+    "bgsrc": "/mybootstrap/assets/img/main/features/3_zero.jpg",
+    "delay": "100",
+    "h3text": "일회용품 제로",
+    "ptext": "식사 후 번거롭게 치워야 했던 일회용기 대신<br>리턴잇 다회용기로 쓰레기 없는 식사를 경험하세요"
+  },
+  {
+    "bgsrc": "/mybootstrap/assets/img/main/features/4_clean.jpg",
+    "delay": "100",
+    "h3text": "깨끗한 다회용기",
+    "ptext": "스마트센터에서 7단계 세척 소독하여<br>언제나 안심하고 사용할 수 있는 청결한 용기를 제공합니다"
+  }
+  ],
+  "clientsdata" : [
+  {
+    "brandlogo": "client-1",
+    "brandname": "배달의 민족"
+  },
+  {
+    "brandlogo": "client-2",
+    "brandname": "요기요"
+  },
+  {
+    "brandlogo": "client-3",
+    "brandname": "쿠팡이츠"
+  },
+  {
+    "brandlogo": "client-4",
+    "brandname": "땡겨요"
+  },
+  {
+    "brandlogo": "client-5",
+    "brandname": "배달특급"
+  },
+  {
+    "brandlogo": "client-6",
+    "brandname": "인천 펜타포트 락 페스티벌"
+  },
+  {
+    "brandlogo": "client-7",
+    "brandname": "롯데웰푸드"
+  },
+  {
+    "brandlogo": "client-8",
+    "brandname": "롯데홈쇼핑"
+  },
+  {
+    "brandlogo": "client-9",
+    "brandname": "삼성웰스토리"
+  },
+  {
+    "brandlogo": "client-10",
+    "brandname": "농심"
+  },
+  {
+    "brandlogo": "client-11",
+    "brandname": "서울특별시"
+  },
+  {
+    "brandlogo": "client-12",
+    "brandname": "경기도"
+  },
+  {
+    "brandlogo": "client-13",
+    "brandname": "인천광역시"
+  },
+  {
+    "brandlogo": "client-14",
+    "brandname": "수원특례시"
+  },
+  {
+    "brandlogo": "client-15",
+    "brandname": "현대백화점"
+  },
+  {
+    "brandlogo": "client-16",
+    "brandname": "넷마블"
+  },
+  {
+    "brandlogo": "client-17",
+    "brandname": "티머니"
+  }
+  ],
+  "newsdata" : [
+  {
+    "date": "2024.01 매일경제",
+    "link": "https://www.mk.co.kr/news/it/10925430",
+    "title": "잇그린, 배달앱 다회용기 서비스로 환경표지 인증 획득"
+  },
+  {
+    "date": "2024.01 연합뉴스",
+    "link": "https://www.yna.co.kr/view/AKR20240109163900004",
+    "title": "'배달 다회용기, 간편·환경보호 일석이조'…서울시 사업확대"
+  },
+  {
+    "date": "2023.11 중앙일보",
+    "link": "https://www.joongang.co.kr/article/25207067",
+    "title": "환경부보다 세다…일회용 컵 없는 이곳, 배달용기 확인 나섰다"
+  },
+  {
+    "date": "2023.10 시사저널e",
+    "link": "https://www.sisajournal-e.com/news/articleView.html?idxno=304451",
+    "title": "다회용기로 환경보호 앞장선 리턴잇··“분리수거 필요 없어 편리”"
+  }
+  ],
+  "blogdata" : [
+  {
+    "date": "2024.07.31",
+    "link": "https://www.returnit.kr/blog/%EC%95%BC%EA%B5%AC%EC%9E%A5%EC%97%90-%EC%93%B0%EB%A0%88%EA%B8%B0%EA%B0%80-%EC%97%86%EC%96%B4%EC%A7%84-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0",
+    "title": "야구장에 쓰레기가 없어진 진짜 이유"
+  },
+  {
+    "date": "2024.05.10",
+    "link": "https://www.returnit.kr/blog/%EC%9D%B8%ED%84%B4%EC%97%90%EC%84%9C-%EC%82%AC%EC%9B%90%EC%9C%BC%EB%A1%9C-%EC%84%B1%EC%9E%A5%ED%95%98%EA%B8%B0%EA%B9%8C%EC%A7%80%EC%9D%98-%EA%B1%B8%EC%9D%8C-%EC%9E%87(it)%ED%84%B0%EB%B7%B0",
+    "title": "인턴에서 사원으로 성장하기까지의 걸음 | 잇(it)터뷰"
+  },
+  {
+    "date": "2024.04.30",
+    "link": "https://www.returnit.kr/blog/%EC%9E%87%EA%B7%B8%EB%A6%B0%EC%9D%80-%EC%99%9C-%EC%BA%90%EB%A6%AD%ED%84%B0%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%97%88%EB%82%98%EC%9A%94",
+    "title": "잇그린은 왜 캐릭터를 만들었나요?"
+  },
+  {
+    "date": "2024.03.31",
+    "link": "https://www.returnit.kr/blog/plastic-package-recycling",
+    "title": "플라스틱 배달용기 재활용 어디까지될까"
+  }
+  ],
+  "newreviews" : [
+  {
+    "owner": "우시라멘 사장님",
+    "image": "/mybootstrap/assets/img/main/testimonials/testimonials-3.jpg",
+    "reviewtext": "다회용기가 일회용기랑 가격도 별로 차이가 나지 않고, 심지어 위생적으로 관리가 잘되서 안쓸 이유가 없었어요. 따뜻한 음식을 일회용기에 담아 보내면 환경 호르몬 걱정하시는 분들이 많았는데, 스테인리스 다회용기 쓰고 부터는 '안심된다', '청결하다', '깔끔하다'는 후기가 많아졌습니다."
+  },
+  {
+    "owner": "사천마라탕 사장님",
+    "image": "/mybootstrap/assets/img/main/testimonials/testimonials-1.jpg",
+    "reviewtext": "한번 다회용기로 음식을 주문했던 분들은 계속 다회용기로 주문하더라고요. 요청사항에 '다회용기가 없으면 주문 취소해주세요'라고 할만큼 다회용기 식당만 찾는 충성 고객이 많다는게 느껴져요. 아무래도 사용경험이 좋고 친환경이라 많이들 선호하시는거 같아요."
+  },
+  {
+    "owner": "한결설렁탕 사장님",
+    "image": "/mybootstrap/assets/img/main/testimonials/testimonials-1.jpg",
+    "reviewtext": "다회용기 배달을 이용하고 '국물이 뜨끈뜨근한 상태로 왔다', '식당에서 먹을 때 온도로 와서 더 맛있었다' 하는 만족 리뷰가 많아졌어요. 리턴잇 다회용기는 스테인리스라 배달 시간이 오래 걸려도 보온이 잘돼서 고객들이 확실히 좋아합니다. 소비자가 좋아하니까 저도 기분이 좋습니다."
+  },
+  {
+    "owner": "막불감동 사장님",
+    "image": "/mybootstrap/assets/img/main/testimonials/testimonials-2.jpg",
+    "reviewtext": "다회용기로 음식을 받은 고객 100%가 만족 리뷰를 남겨주세요. 투명한 뚜껑에 덮인 스테인리스 용기에 음식이 배달되니까 비주얼이 집밥 같다고 더 좋아하시더라고요."
+  },
+  {
+    "owner": "바이통타이 사장님",
+    "image": "/mybootstrap/assets/img/main/testimonials/testimonials-1.jpg",
+    "reviewtext": "다회용기는 먹고 그냥 뚜껑 덮어서 문앞에 두면 회수해 가시니까 고객입장에서도 매력적인 내용이라 가게 설명에도 '다회용기 가게'라고 적어놨어요. 당연히 만족 리뷰가 늘었고, 덩달아 주문도 늘었습니다."
+  },
+  {
+    "owner": "정성성도시락 사장님",
+    "image": "/mybootstrap/assets/img/main/testimonials/testimonials-2.jpg",
+    "reviewtext": "배달 전문점 사장님들은 무조건 사용 하셨으면 좋겠어요. 배달 전문점이 아무래도 플라스틱 일회용 포장 용기를 많이 사용 하잖아요. 주문이 많아 질수록 만큼 환경 죄책감이 생겨서 도입 했는데, 덕분에 주문은 더 늘고 죄책감은 덜고 있어서 대만족입니다."
+  }
+  ]
+}
