@@ -15,21 +15,21 @@ window.addEventListener('load', function(){
   mynavi.innerHTML = mytag;
   //=========================
 
-  const itemservices = this.document.querySelector("#services div.container div");
+  const serviceitem = this.document.querySelector("#services div.container div");
 
   let myservices = '';
 
-  for ( x of services ){
+  for ( x of servicesdata ){
     myservices +=
     `<div class="col-lg-6" data-aos="fade-up" data-aos-delay="${x.delay}">
-      <div class="service-item position-relative" style="background: url(${x.bgsrc}) no-repeat center; background-size: cover;">
+      <div class="service-item position-relative" style="background: url('${x.bgsrc}') no-repeat center; background-size: cover;">
                 <h3>${x.h3text}</h3>
                 <p>${x.ptext}</p>
             </div>
           </div>`
   }
 
-  itemservices.innerHTML = myservices;
+  serviceitem.innerHTML = myservices;
   //=========================
 
   const statsitem = this.document.querySelector("#statswrap");
@@ -121,13 +121,9 @@ window.addEventListener('load', function(){
   });
   //=========================
 
-  const newLink = document.createElement('a');
-  newLink.classList.add('more');
-  newLink.classList.add('servicebtn');
-  newLink.textContent = "+"
-  newLink.href = "#"
-  newLink.setAttribute('data-toggle', 'modal');
-  newLink.setAttribute('data-target', '#7step');
-  document.querySelector("#services > div:nth-child(2) > div > div:nth-child(4) > div").appendChild(newLink);
+  const popuptrigger =   document.querySelector("#services > div:nth-child(2) > div > div:nth-child(4) > div");
+  popuptrigger.innerHTML += `<a class='more servicebtn' type="button" data-bs-toggle="modal" href="#step7" >+</a>`
+  //=========================
+
 
 })

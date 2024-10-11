@@ -19,12 +19,12 @@
   right: 0;
   top: 0;
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
   background-color: var(--accent-color);
   color: var(--default-color);
   font-size: 24px;
-  line-height: 50px;
+  line-height: 3rem;
   font-weight: 600;
   border-radius: 100px;
   text-align: center;
@@ -88,7 +88,8 @@
     position: fixed;
     left: 2rem;
     right: 2rem;
-    top: calc(100vh - 5rem);
+    top: unset;
+    bottom: 25px;
     padding: 10px 90px;
     margin: 0;
     border-radius: 50px;
@@ -98,6 +99,11 @@
   }
   .scrolled .navmenu ul {
     background-color: rgba(255, 255, 255, 0.7);
+  }
+  .scroll-top {
+    right: 3rem;
+    bottom: 35px;
+    border-radius: 50px;
   }
 }
 #footer #footer-logo {

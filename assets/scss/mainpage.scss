@@ -247,6 +247,16 @@
 }
 
 .servicebtn {
-  right: 30px;
-  top: 30px;
+  right: 1rem;
+  top: 1rem;
+}
+
+#step7 {
+  .modal-dialog{
+    top: calc(50% - 270px);
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
 }
