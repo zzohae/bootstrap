@@ -9,7 +9,7 @@
   font-family: 'Pretendard' !important;
 }
 
-// 커스텀 공통 클래스
+// 공통 클래스
 .text-truncate {
   white-space: nowrap;
   overflow: hidden;
@@ -31,6 +31,41 @@
   text-align: center;
   &:hover {
     color: var(--default-color) !important;
+  }
+}
+
+// ui custom
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: none;
+  background: #fff100;
+  font-weight: normal;
+  color: #333
+}
+.ui-icon {
+  margin-top: .5em !important;
+  filter: invert(0.8);
+}
+.ui-widget-content {
+  color: #666;
+}
+
+.form-check-input[type=radio] {
+  --bs-form-check-bg-image: url(/mybootstrap/assets/img/common/formtagcircle.svg);
+  background-color: transparent;
+
+  &:checked{
+    --bs-form-check-bg-image: url(/mybootstrap/assets/img/common/formtagcircle_invert.svg);
+    background-color: var(--accent-color);
+  }
+}
+
+.form-check-input[type=checkbox] {
+  --bs-form-check-bg-image: url(/mybootstrap/assets/img/common/formtagcircle.svg);
+  background-color: transparent;
+
+  &:checked{
+    --bs-form-check-bg-image: url(/mybootstrap/assets/img/common/formtagcircle_invert.svg);
+    background-color: var(--accent-color);
   }
 }
 

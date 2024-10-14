@@ -172,7 +172,7 @@ h6 {
   color: #333;
   font-size: 14px;
   padding: 10px 30px;
-  border-radius: 10px;
+  border-radius: var(--bs-border-radius);
   transition: 0.3s;
   background: var(--accent-color);
 }
@@ -772,7 +772,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 50%);
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -785,18 +785,21 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 56px;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 500;
   font-family: var(--nav-font);
+  color: #eee;
 }
 
 .hero h2 span {
   color: var(--accent-color);
+  font-size: 7.5rem;
+  font-weight: 700;
 }
 
 .hero p {
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 

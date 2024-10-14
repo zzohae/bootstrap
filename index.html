@@ -11,126 +11,133 @@
 
       <div class="container">
 
-        <div class="row justify-content-center text-center align-items-center" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-xl-6 col-lg-8">
-            <h2>배달음식도 다회용기로,<br>리턴잇</h2>
-            <p>배달음식 쓰레기가 발생하지 않는 다회용기 서비스</p>
+        <div class="row justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-5 col-lg-8 text-center text-xl-end me-xl-4">
+            <h2 class="mb-4 pe-5">배달음식도 다회용기로<span class="d-block">리턴잇</span></h2>
+            <p class="pe-5">배달음식 쓰레기가 발생하지 않는 다회용기 서비스</p>
           </div>
 
-          <div class="col-5 d-none d-xl-block" style="text-align: left;">
+          <div class="col-6 d-none d-xl-block" style="text-align: left;">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
               data-aos-delay="200">
-              <div class="form-group mb-3">
-                <label><input class="form-check-input" type="radio" name="options" value="A" checked> 배달용기 도입
-                  문의</label><br>
-                <label><input class="form-check-input" type="radio" name="options" value="B"> B2B 정기대여/협업/마케팅
-                  문의</label><br>
-                <label><input class="form-check-input" type="radio" name="options" value="C"> 축제/행사 문의</label>
-              </div>
-
-              <div id="formA" class="form-container d-block">
-                <div class="row mb-3">
-                  <div class="col-xl-12 mb-1">
-                    <input type="text" class="form-control" placeholder="가게 이름" required>
-                  </div>
-                  <div class="col-xl-12 mb-1">
-                    <input type="text" class="form-control" placeholder="주소" required>
-                  </div>
-                  <div class="col-xl-6 mb-1 pe-xl-0">
-                    <input type="text" class="form-control" placeholder="사장님 성함" required>
-                  </div>
-                  <div class="col-xl-6 mb-1 ps-xl-1">
-                    <input type="text" class="form-control" placeholder="전화번호" required>
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <h4>가게가 등록된 배달앱</h4>
-                  <div class="col-xl-12">
-                    <input type="checkbox" name="app" value="B" class="form-check-input"> 배달의민족(일반)
-                    <input type="checkbox" name="app" value="B1" class="ms-3 form-check-input"> 배민1
-                    <input type="checkbox" name="app" value="Yo" class="ms-3 form-check-input"> 요기요
-                    <input type="checkbox" name="app" value="C" class="ms-3 form-check-input"> 쿠팡이츠
-                  </div>
-                  <div class="col-xl-12 mt-2 mb-2">
-                    <input type="checkbox" name="app" value="Others" class="me-1 form-check-input"> 기타
-                    <input type="text" class="other-input form-control ms-1" placeholder="기타 입력">
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <h4>개인정보 수집 및 이용 약관 동의</h4>
-                  <p class="mb-1">입력해주신 정보는 상담 및 서비스 안내 목적으로만 사용합니다.</p>
-                  <div class="form-check">
-                    <input type="checkbox" value="Y" id="consentCheckbox" class="form-check-input">
-                    <label class="form-check-label" for="consentCheckbox">동의합니다.</label>
-                  </div>
-                </div>
-              </div>
-
-              <div id="formB" class="form-container d-none">
-                <div class="row mb-3">
-                  <div class="col-xl-12 mb-1">
-                    <select class="form-control position-relative" id="inquiryType" required>
-                      <option value="" disabled selected>문의 유형 선택 ▼</option>
-                      <option value="B2B 정기대여">B2B 정기대여</option>
-                      <option value="협업/마케팅 문의">협업/마케팅 문의</option>
-                    </select>
-                  </div>
-                  <div class="col-xl-12 mb-1">
-                    <input type="text" class="form-control" placeholder="회사명" required>
-                  </div>
-                  <div class="col-xl-6 mb-1 pe-xl-0">
-                    <input type="text" class="form-control" placeholder="담당자 이름" required>
-                  </div>
-                  <div class="col-xl-6 mb-1 ps-xl-1">
-                    <input type="text" class="form-control" placeholder="전화번호" required>
-                  </div>
-                  <div class="col-xl-12 mb-1">
-                    <input type="email" class="form-control" placeholder="이메일" required>
+              <ul class="nav nav-tabs mb-4" id="orderTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="Delivery-tab" data-bs-toggle="tab" data-bs-target="#formA" type="button" role="tab" aria-controls="formA" aria-selected="true">배달용기 도입 문의</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="B2B-tab" data-bs-toggle="tab" data-bs-target="#formB" type="button" role="tab" aria-controls="formB" aria-selected="false">B2B 정기대여/협업/마케팅 문의</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="Fest-tab" data-bs-toggle="tab" data-bs-target="#formC" type="button" role="tab" aria-controls="formC" aria-selected="false">축제/행사 문의</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="FormTabContent">
+                <div class="tab-pane show active" id="formA" role="tabpanel" aria-labelledby="Delivery-tab">
+                  <div class="form-container">
+                    <div class="row mb-4">
+                      <div class="col-xl-12 mb-1">
+                        <input type="text" class="form-control" placeholder="가게 이름" required>
+                      </div>
+                      <div class="col-xl-12 mb-1">
+                        <input type="text" class="form-control" placeholder="주소" required>
+                      </div>
+                      <div class="col-xl-6 mb-1 pe-xl-0">
+                        <input type="text" class="form-control" placeholder="사장님 성함" required>
+                      </div>
+                      <div class="col-xl-6 mb-1 ps-xl-1">
+                        <input type="text" class="form-control" placeholder="전화번호" required>
+                      </div>
+                    </div>
+    
+                    <div class="mb-4">
+                      <h4>가게가 등록된 배달앱</h4>
+                      <div class="col-xl-12">
+                        <input type="checkbox" name="app" value="B" class="form-check-input me-1"> 배달의민족(일반)
+                        <input type="checkbox" name="app" value="B1" class="ms-3 form-check-input me-1"> 배민1
+                        <input type="checkbox" name="app" value="Yo" class="ms-3 form-check-input me-1"> 요기요
+                        <input type="checkbox" name="app" value="C" class="ms-3 form-check-input"> 쿠팡이츠
+                      </div>
+                      <div class="col-xl-12 mt-2 mb-2">
+                        <input type="checkbox" name="app" value="Others" class="me-1 form-check-input"> 기타
+                        <input type="text" class="other-input form-control ms-1" placeholder="기타 입력">
+                      </div>
+                    </div>
+    
+                    <div class="mb-4">
+                      <h4>개인정보 수집 및 이용 약관 동의</h4>
+                      <p class="mb-2">입력해주신 정보는 상담 및 서비스 안내 목적으로만 사용합니다.</p>
+                      <div class="form-check">
+                        <input type="checkbox" value="Y" id="consentCheckbox" class="form-check-input">
+                        <label class="form-check-label" for="consentCheckbox">동의합니다.</label>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <div class="mb-3">
-                  <h4>개인정보 수집 및 이용 약관 동의</h4>
-                  <p class="mb-1">입력해주신 정보는 상담 및 서비스 안내 목적으로만 사용합니다.</p>
-                  <div class="form-check">
-                    <input type="checkbox" value="Y" id="consentCheckboxB" class="form-check-input">
-                    <label class="form-check-label" for="consentCheckboxB">동의합니다.</label>
+                <div class="tab-pane" id="formB" role="tabpanel" aria-labelledby="B2B-tab"><div class="form-container">
+                  <div class="row mb-4">
+                    <div class="col-xl-12 mb-1">
+                      <select class="form-control position-relative" id="inquiryType" required>
+                        <option disabled selected>문의 유형 선택 </option>
+                        <option value="B2B 정기대여">B2B 정기대여</option>
+                        <option value="협업/마케팅 문의">협업/마케팅 문의</option>
+                      </select>
+                    </div>
+                    <div class="col-xl-12 mb-1">
+                      <input type="text" class="form-control" placeholder="회사명" required>
+                    </div>
+                    <div class="col-xl-6 mb-1 pe-xl-0">
+                      <input type="text" class="form-control" placeholder="담당자 이름" required>
+                    </div>
+                    <div class="col-xl-6 mb-1 ps-xl-1">
+                      <input type="text" class="form-control" placeholder="전화번호" required>
+                    </div>
+                    <div class="col-xl-12 mb-1">
+                      <input type="email" class="form-control" placeholder="이메일" required>
+                    </div>
                   </div>
-                </div>
-              </div>
-
-              <div id="formC" class="form-container d-none">
-                <div class="row mb-3">
-                  <div class="col-xl-12 mb-1">
-                    <input type="text" class="form-control" placeholder="행사명" required>
+  
+                  <div class="mb-4">
+                    <h4>개인정보 수집 및 이용 약관 동의</h4>
+                    <p class="mb-2">입력해주신 정보는 상담 및 서비스 안내 목적으로만 사용합니다.</p>
+                    <div class="form-check">
+                      <input type="checkbox" value="Y" id="consentCheckboxB" class="form-check-input">
+                      <label class="form-check-label" for="consentCheckboxB">동의합니다.</label>
+                    </div>
                   </div>
-                  <div class="col-xl-6 mb-1 pe-xl-0 dateselector form-group">
-                    <label for="startDate">시작 날짜</label>
-                    <input type="date" class="form-control" id="startDate" required>
-                  </div>
-                  <div class="col-xl-6 mb-1 mb-md-3 ps-xl-1 dateselector form-group">
-                    <label for="endDate">종료 날짜</label>
-                    <input type="date" class="form-control" id="endDate" required>
-                  </div>
-                  <div class="col-xl-6 mb-1 pe-xl-0">
-                    <input type="text" class="form-control" placeholder="담당자 이름" required>
-                  </div>
-                  <div class="col-xl-6 mb-1 ps-xl-1">
-                    <input type="text" class="form-control" placeholder="전화번호" required>
-                  </div>
-                  <div class="col-xl-12 mb-1">
-                    <input type="email" class="form-control" placeholder="이메일" required>
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <h4>개인정보 수집 및 이용 약관 동의</h4>
-                  <p class="mb-1">입력해주신 정보는 상담 및 서비스 안내 목적으로만 사용합니다.</p>
-                  <div class="form-check">
-                    <input type="checkbox" value="Y" id="consentCheckboxC" class="form-check-input">
-                    <label class="form-check-label" for="consentCheckboxC">동의합니다.</label>
+                </div></div>
+                <div class="tab-pane" id="formC" role="tabpanel" aria-labelledby="Fest-tab">
+                  <div class="form-container">
+                    <div class="row mb-4">
+                      <div class="col-xl-12 mb-1">
+                        <input type="text" class="form-control" placeholder="행사명" required>
+                      </div>
+                      <div class="col-xl-6 mb-2 pe-xl-0 dateselector form-group">
+                        <label for="startDate">시작 날짜</label>
+                        <input type="date" class="form-control" id="startDate" required>
+                      </div>
+                      <div class="col-xl-6 mb-2 ps-xl-1 dateselector form-group">
+                        <label for="endDate">종료 날짜</label>
+                        <input type="date" class="form-control" id="endDate" required>
+                      </div>
+                      <div class="col-xl-6 mb-1 pe-xl-0">
+                        <input type="text" class="form-control" placeholder="담당자 이름" required>
+                      </div>
+                      <div class="col-xl-6 mb-1 ps-xl-1">
+                        <input type="text" class="form-control" placeholder="전화번호" required>
+                      </div>
+                      <div class="col-xl-12 mb-1">
+                        <input type="email" class="form-control" placeholder="이메일" required>
+                      </div>
+                    </div>
+    
+                    <div class="mb-4">
+                      <h4>개인정보 수집 및 이용 약관 동의</h4>
+                      <p class="mb-2">입력해주신 정보는 상담 및 서비스 안내 목적으로만 사용합니다.</p>
+                      <div class="form-check">
+                        <input type="checkbox" value="Y" id="consentCheckboxC" class="form-check-input">
+                        <label class="form-check-label" for="consentCheckboxC">동의합니다.</label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -272,7 +279,7 @@
                   "spaceBetween": 80
                 },
                 "992": {
-                  "slidesPerView": 6,
+                  "slidesPerView": 5,
                   "spaceBetween": 120
                 }
               }

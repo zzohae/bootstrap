@@ -33,6 +33,40 @@
   color: var(--default-color) !important;
 }
 
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: none;
+  background: #fff100;
+  font-weight: normal;
+  color: #333;
+}
+
+.ui-icon {
+  margin-top: 0.5em !important;
+  filter: invert(0.8);
+}
+
+.ui-widget-content {
+  color: #666;
+}
+
+.form-check-input[type=radio] {
+  --bs-form-check-bg-image: url(/mybootstrap/assets/img/common/formtagcircle.svg);
+  background-color: transparent;
+}
+.form-check-input[type=radio]:checked {
+  --bs-form-check-bg-image: url(/mybootstrap/assets/img/common/formtagcircle_invert.svg);
+  background-color: var(--accent-color);
+}
+
+.form-check-input[type=checkbox] {
+  --bs-form-check-bg-image: url(/mybootstrap/assets/img/common/formtagcircle.svg);
+  background-color: transparent;
+}
+.form-check-input[type=checkbox]:checked {
+  --bs-form-check-bg-image: url(/mybootstrap/assets/img/common/formtagcircle_invert.svg);
+  background-color: var(--accent-color);
+}
+
 #header a.btn-getstarted:first-child, #header a.btn-getstarted:first-child:focus {
   background-color: #ddd;
 }

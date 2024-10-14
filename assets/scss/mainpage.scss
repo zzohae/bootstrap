@@ -1,8 +1,20 @@
+#orderTab {
+  .nav-link{
+    color: rgba($color: #ffffff, $alpha: 0.7);
+    
+    &.active {
+      color: #333;
+      background-color: var(--accent-color);
+      border: none;
+    }
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}
+
 #hero {
   form {
-    h4 {
-      margin-bottom: 0;
-    }
 
     p {
       font-size: 15px;
@@ -11,8 +23,9 @@
 
     .form-control {
       background: transparent;
-      border-color: #999;
+      border: 1px solid #999;
       color: #fff;
+      line-height: 2;
 
       &:focus {
         border-color: var(--accent-color);
@@ -39,6 +52,7 @@
       display: inline-block;
       width: auto;
       padding: 0 0.3rem;
+      line-height: 1.5;
       &:placeholder{
         color: #999;
       }
@@ -56,17 +70,31 @@
 
   #submit {
     background-color: var(--accent-color);
-    border-radius: 10px;
     border: none;
     color: #333;
     font-size: 24px;
     font-weight: 600;
     padding: 12px 24px;
-    border-radius: 20px;
+    border-radius: var(--bs-border-radius);
+    width: 100%;
   }
 }
 
 #formB {
+  #inquiryType-button {
+    width: 100%;
+    line-height: 2;
+    background: transparent;
+    color: #fff;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: var(--bs-border-radius);
+    border: 1px solid #999;
+    &:focus {
+      border: 1px solid var(--accent-color);
+    }
+  }
+
   select {
     option {
       color: #666;
