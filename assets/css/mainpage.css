@@ -24,50 +24,50 @@
 #hero .container > div {
   height: 600px;
 }
-#hero form p {
+#hero .exp {
   font-size: 15px;
   margin-top: 0;
 }
-#hero form .form-control {
+#hero .form-control {
   background: transparent;
   border: 1px solid #999;
   color: #fff;
   line-height: 2;
 }
-#hero form .form-control:focus {
+#hero .form-control:focus {
   border-color: var(--accent-color);
   background: transparent;
   box-shadow: none;
   color: #fff;
 }
-#hero form .form-control:placeholder {
+#hero .form-control:placeholder {
   color: #fff;
 }
-#hero form .form-control:-moz-placeholder {
+#hero .form-control:-moz-placeholder {
   color: #fff;
 }
-#hero form .form-control:-ms-input-placeholder {
+#hero .form-control:-ms-input-placeholder {
   color: #fff;
 }
-#hero form .form-control::-webkit-input-placeholder {
+#hero .form-control::-webkit-input-placeholder {
   color: #fff;
 }
-#hero form .other-input {
+#hero .other-input {
   display: inline-block;
   width: auto;
   padding: 0 0.3rem;
   line-height: 1.5;
 }
-#hero form .other-input:placeholder {
+#hero .other-input:placeholder {
   color: #999;
 }
-#hero form .other-input:-moz-placeholder {
+#hero .other-input:-moz-placeholder {
   color: #999;
 }
-#hero form .other-input:-ms-input-placeholder {
+#hero .other-input:-ms-input-placeholder {
   color: #999;
 }
-#hero form .other-input::-webkit-input-placeholder {
+#hero .other-input::-webkit-input-placeholder {
   color: #999;
 }
 #hero #submit {

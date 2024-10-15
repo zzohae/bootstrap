@@ -28,10 +28,10 @@
   .container > div {
     height: 600px;
   }
-  
-  form {
 
-    p {
+  
+
+    .exp {
       font-size: 15px;
       margin-top: 0;
     }
@@ -80,7 +80,6 @@
       &::-webkit-input-placeholder {
         color: #999;
       }
-    }
   }
 
   #submit {
