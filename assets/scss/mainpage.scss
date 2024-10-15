@@ -95,24 +95,24 @@
 }
 
 #B2B_inquiries {
-  #inquiryType-button {
-    width: 100%;
-    line-height: 2;
-    background: transparent;
-    color: #fff;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    border-radius: var(--bs-border-radius);
-    border: 1px solid #999;
-    &:focus {
-      border: 1px solid var(--accent-color);
-    }
-  }
-
   select {
     option {
       color: #666;
     }
+  }
+}
+
+#inquiryType-button {
+  width: 100%;
+  line-height: 2;
+  background: transparent;
+  color: #fff;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: var(--bs-border-radius);
+  border: 1px solid #999;
+  &:focus {
+    border: 1px solid var(--accent-color);
   }
 }
 

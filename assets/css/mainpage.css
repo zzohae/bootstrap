@@ -81,7 +81,11 @@
   width: 100%;
 }
 
-#B2B_inquiries #inquiryType-button {
+#B2B_inquiries select option {
+  color: #666;
+}
+
+#inquiryType-button {
   width: 100%;
   line-height: 2;
   background: transparent;
@@ -91,11 +95,8 @@
   border-radius: var(--bs-border-radius);
   border: 1px solid #999;
 }
-#B2B_inquiries #inquiryType-button:focus {
+#inquiryType-button:focus {
   border: 1px solid var(--accent-color);
-}
-#B2B_inquiries select option {
-  color: #666;
 }
 
 .dateselector {
