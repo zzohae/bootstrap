@@ -29,37 +29,44 @@
     height: 520px;
   }
 
-    .exp {
-      font-size: 15px;
-      margin-top: 0;
+  h2 span {
+    background: url(/mybootstrap/assets/img/main/returnitbag.png) no-repeat 0 center;
+    @media (max-width: 1199px) {
+      background: none;
     }
+  }
 
-    .form-control {
+  .exp {
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  .form-control {
+    background: transparent;
+    border: 1px solid #999;
+    color: #fff;
+    line-height: 2;
+
+    &:focus {
+      border-color: var(--accent-color);
       background: transparent;
-      border: 1px solid #999;
+      box-shadow: none;
       color: #fff;
-      line-height: 2;
-
-      &:focus {
-        border-color: var(--accent-color);
-        background: transparent;
-        box-shadow: none;
-        color: #fff;
-      }
-
-      &:placeholder {
-        color: #fff;
-      }
-      &:-moz-placeholder {
-        color: #fff;
-      }
-      &:-ms-input-placeholder {
-        color: #fff;
-      }
-      &::-webkit-input-placeholder {
-        color: #fff;
-      }
     }
+
+    &:placeholder {
+      color: #fff;
+    }
+    &:-moz-placeholder {
+      color: #fff;
+    }
+    &:-ms-input-placeholder {
+      color: #fff;
+    }
+    &::-webkit-input-placeholder {
+      color: #fff;
+    }
+  }
 
     .other-input {
       display: inline-block;

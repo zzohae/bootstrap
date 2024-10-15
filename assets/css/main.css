@@ -793,9 +793,8 @@ section,
 
 .hero h2 span {
   color: var(--accent-color);
-  font-size: 7.5rem;
+  font-size: 7rem;
   font-weight: 500;
-  background: url(/mybootstrap/assets/img/main/returnitbag.png) no-repeat 0 center;
 }
 
 .hero p {
