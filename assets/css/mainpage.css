@@ -81,7 +81,7 @@
   width: 100%;
 }
 
-#formB #inquiryType-button {
+#B2B_inquiries #inquiryType-button {
   width: 100%;
   line-height: 2;
   background: transparent;
@@ -91,10 +91,10 @@
   border-radius: var(--bs-border-radius);
   border: 1px solid #999;
 }
-#formB #inquiryType-button:focus {
+#B2B_inquiries #inquiryType-button:focus {
   border: 1px solid var(--accent-color);
 }
-#formB select option {
+#B2B_inquiries select option {
   color: #666;
 }
 
