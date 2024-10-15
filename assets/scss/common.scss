@@ -5,11 +5,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'GumiRomanceTTF';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/GumiRomanceTTF.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   font-family: 'Pretendard' !important;
 }
 
 // 공통 클래스
+.maintitle {
+  font-family: 'GumiRomanceTTF' !important;
+}
+
 .text-truncate {
   white-space: nowrap;
   overflow: hidden;
