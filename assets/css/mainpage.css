@@ -1,15 +1,29 @@
+#orderTab {
+  border-bottom: none;
+  gap: 0.5rem;
+}
 #orderTab .nav-link {
   color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+}
+#orderTab .nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 #orderTab .nav-link.active {
   color: #333;
   background-color: var(--accent-color);
-  border: none;
+  border-color: transparent;
 }
-#orderTab .nav-link:hover {
-  color: var(--accent-color);
+#orderTab .nav-link.active:hover {
+  color: #333;
+  border-color: transparent;
 }
 
+#hero .container > div {
+  height: 600px;
+}
 #hero form p {
   font-size: 15px;
   margin-top: 0;
