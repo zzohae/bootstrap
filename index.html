@@ -1,38 +1,42 @@
 <?php include_once("./layout/mainpagetop.php"); ?>
 
-  <main class="main">
+<main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+  <!-- Hero Section -->
+  <section id="hero" class="hero section dark-background">
 
-      <video autoplay muted playsinline loop>
-        <source src="//framerusercontent.com/assets/Slgpw37RrKPLgYDFgTJIFYU9mE.mp4">
-      </video>
+    <video autoplay muted playsinline loop>
+      <source src="//framerusercontent.com/assets/Slgpw37RrKPLgYDFgTJIFYU9mE.mp4">
+    </video>
 
-      <div class="container">
+    <div class="container">
 
-        <div class="row justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-xl-5 col-lg-8 text-center text-xl-end me-xl-4">
-            <h2 class="mb-4 pe-5">배달음식도 다회용기로<span class="d-block">리턴잇</span></h2>
-            <p class="pe-5">배달음식 쓰레기가 발생하지 않는 다회용기 서비스</p>
-          </div>
+      <div class="row justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-xl-5 col-lg-8 text-center text-xl-end me-xl-4">
+          <h2 class="mb-4 pe-5">배달음식도 다회용기로<span class="d-block">리턴잇</span></h2>
+          <p class="pe-5">배달음식 쓰레기가 발생하지 않는 다회용기 서비스</p>
+        </div>
 
-          <div class="col-6 d-none d-xl-block h-100" style="text-align: left;">
-            <div class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <ul class="nav nav-tabs mb-4" id="orderTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="Delivery-tab" data-bs-toggle="tab" data-bs-target="#formA" type="button" role="tab" aria-controls="formA" aria-selected="true">배달용기 도입 문의</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="B2B-tab" data-bs-toggle="tab" data-bs-target="#formB" type="button" role="tab" aria-controls="formB" aria-selected="false">B2B 정기대여/협업/마케팅 문의</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="Fest-tab" data-bs-toggle="tab" data-bs-target="#formC" type="button" role="tab" aria-controls="formC" aria-selected="false">축제/행사 문의</button>
-                </li>
-              </ul>
-              <div class="tab-content" id="FormTabContent">
-                <div class="tab-pane show active" id="formA" role="tabpanel" aria-labelledby="Delivery-tab">
-                  <div class="form-container">
+        <div class="col-6 d-none d-xl-block h-100" style="text-align: left;">
+          <div class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <ul class="nav nav-tabs mb-4" id="orderTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="Delivery-tab" data-bs-toggle="tab" data-bs-target="#formA"
+                  type="button" role="tab" aria-controls="formA" aria-selected="true">배달용기 도입 문의</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="B2B-tab" data-bs-toggle="tab" data-bs-target="#formB" type="button"
+                  role="tab" aria-controls="formB" aria-selected="false">B2B 정기대여/협업/마케팅 문의</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Fest-tab" data-bs-toggle="tab" data-bs-target="#formC" type="button"
+                  role="tab" aria-controls="formC" aria-selected="false">축제/행사 문의</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="FormTabContent">
+              <div class="tab-pane show active" id="formA" role="tabpanel" aria-labelledby="Delivery-tab">
+                <div class="form-container">
+                  <form action="#" method="post" class="php-email-form">
                     <div class="row mb-4">
                       <div class="col-xl-12 mb-1">
                         <input type="text" class="form-control" placeholder="가게 이름" required>
@@ -47,7 +51,7 @@
                         <input type="text" class="form-control" placeholder="전화번호" required>
                       </div>
                     </div>
-    
+
                     <div class="mb-4">
                       <h4>가게가 등록된 배달앱</h4>
                       <div class="col-xl-12">
@@ -61,51 +65,57 @@
                         <input type="text" class="other-input form-control ms-1" placeholder="기타 입력">
                       </div>
                     </div>
-    
+
                     <div class="mb-4">
                       <h4>개인정보 수집 및 이용 약관 동의</h4>
-                      <p class="mb-2">입력해주신 정보는 상담 및 서비스 안내 목적으로만 사용합니다.</p>
+                      <p class="mb-2 exp">입력해주신 정보는 상담 및 서비스 안내 목적으로만 사용합니다.</p>
                       <div class="form-check">
                         <input type="checkbox" value="Y" id="consentCheckbox" class="form-check-input">
                         <label class="form-check-label" for="consentCheckbox">동의합니다.</label>
                       </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
-                <div class="tab-pane" id="formB" role="tabpanel" aria-labelledby="B2B-tab"><div class="form-container">
-                  <div class="row mb-4">
-                    <div class="col-xl-12 mb-1">
-                      <select class="form-control position-relative" id="inquiryType" required>
-                        <option disabled selected>문의 유형 선택 </option>
-                        <option value="B2B 정기대여">B2B 정기대여</option>
-                        <option value="협업/마케팅 문의">협업/마케팅 문의</option>
-                      </select>
+              </div>
+              <div class="tab-pane" id="formB" role="tabpanel" aria-labelledby="B2B-tab">
+                <div class="form-container">
+                  <form action="#" method="post" class="php-email-form">
+                    <div class="row mb-4">
+                      <div class="col-xl-12 mb-1">
+                        <select class="form-control position-relative" id="inquiryType" required>
+                          <option disabled selected>문의 유형 선택 </option>
+                          <option value="B2B 정기대여">B2B 정기대여</option>
+                          <option value="협업/마케팅 문의">협업/마케팅 문의</option>
+                        </select>
+                      </div>
+                      <div class="col-xl-12 mb-1">
+                        <input type="text" class="form-control" placeholder="회사명" required>
+                      </div>
+                      <div class="col-xl-6 mb-1 pe-xl-0">
+                        <input type="text" class="form-control" placeholder="담당자 이름" required>
+                      </div>
+                      <div class="col-xl-6 mb-1 ps-xl-1">
+                        <input type="text" class="form-control" placeholder="전화번호" required>
+                      </div>
+                      <div class="col-xl-12 mb-1">
+                        <input type="email" class="form-control" placeholder="이메일" required>
+                      </div>
                     </div>
-                    <div class="col-xl-12 mb-1">
-                      <input type="text" class="form-control" placeholder="회사명" required>
+
+                    <div class="mb-4">
+                      <h4>개인정보 수집 및 이용 약관 동의</h4>
+                      <p class="mb-2">입력해주신 정보는 상담 및 서비스 안내 목적으로만 사용합니다.</p>
+                      <div class="form-check">
+                        <input type="checkbox" value="Y" id="consentCheckboxB" class="form-check-input">
+                        <label class="form-check-label" for="consentCheckboxB">동의합니다.</label>
+                      </div>
                     </div>
-                    <div class="col-xl-6 mb-1 pe-xl-0">
-                      <input type="text" class="form-control" placeholder="담당자 이름" required>
-                    </div>
-                    <div class="col-xl-6 mb-1 ps-xl-1">
-                      <input type="text" class="form-control" placeholder="전화번호" required>
-                    </div>
-                    <div class="col-xl-12 mb-1">
-                      <input type="email" class="form-control" placeholder="이메일" required>
-                    </div>
-                  </div>
-  
-                  <div class="mb-4">
-                    <h4>개인정보 수집 및 이용 약관 동의</h4>
-                    <p class="mb-2">입력해주신 정보는 상담 및 서비스 안내 목적으로만 사용합니다.</p>
-                    <div class="form-check">
-                      <input type="checkbox" value="Y" id="consentCheckboxB" class="form-check-input">
-                      <label class="form-check-label" for="consentCheckboxB">동의합니다.</label>
-                    </div>
-                  </div>
-                </div></div>
-                <div class="tab-pane" id="formC" role="tabpanel" aria-labelledby="Fest-tab">
-                  <div class="form-container">
+                  </form>
+                </div>
+              </div>
+              <div class="tab-pane" id="formC" role="tabpanel" aria-labelledby="Fest-tab">
+                <div class="form-container">
+                  <form action="#" method="post" class="php-email-form">
                     <div class="row mb-4">
                       <div class="col-xl-12 mb-1">
                         <input type="text" class="form-control" placeholder="행사명" required>
@@ -128,7 +138,7 @@
                         <input type="email" class="form-control" placeholder="이메일" required>
                       </div>
                     </div>
-    
+
                     <div class="mb-4">
                       <h4>개인정보 수집 및 이용 약관 동의</h4>
                       <p class="mb-2">입력해주신 정보는 상담 및 서비스 안내 목적으로만 사용합니다.</p>
@@ -137,48 +147,47 @@
                         <label class="form-check-label" for="consentCheckboxC">동의합니다.</label>
                       </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
+            </div>
 
-              <div class="col-xl-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+            <div class="col-xl-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                <button type="submit" id="submit">빠른 문의하기</button>
-              </div>
+              <button type="submit" id="submit">빠른 문의하기</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-    </section><!-- /Hero Section -->
+  </section><!-- /Hero Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
+  <!-- Stats Section -->
+  <section id="stats" class="stats section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 align-items-center justify-content-between">
+      <div class="row gy-4 align-items-center justify-content-between">
 
-          <div class="col-lg-5">
-            <img src="/mybootstrap/assets/img/main/stats/stats-img.jpg" alt="" class="img-fluid">
+        <div class="col-lg-5">
+          <img src="/mybootstrap/assets/img/main/stats/stats-img.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-lg-6">
+          <div class="section-title m-0 pb-3">
+            <h2>ABOUT US</h2>
           </div>
+          <h3 class="fw-bold fs-2 mb-3">잇그린은 세상에 없던 서비스를 <span class="d-none d-lg-inline d-xxl-none"><br></span>만들고
+            있습니다</h3>
+          <p>
+            새로운 방식으로 나아가는 이 세상에 없었던 <span class="d-xxl-none"><br></span>3R (Reduce, Reuse, Recycle) 서비스의 리더
+          </p>
 
-          <div class="col-lg-6">
-            <div class="section-title m-0 pb-3">
-              <h2>ABOUT US</h2>
-            </div>
-            <h3 class="fw-bold fs-2 mb-3">잇그린은 세상에 없던 서비스를 <span class="d-none d-lg-inline d-xxl-none"><br></span>만들고
-              있습니다</h3>
-            <p>
-              새로운 방식으로 나아가는 이 세상에 없었던 <span class="d-xxl-none"><br></span>3R (Reduce, Reuse, Recycle) 서비스의 리더
-            </p>
-
-            <div class="row gy-4" id="statswrap">
-
-            </div>
+          <div class="row gy-4" id="statswrap">
 
           </div>
 
@@ -186,77 +195,82 @@
 
       </div>
 
-    </section><!-- /Stats Section -->
+    </div>
 
-    <section id="awards">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-between justify-content-lg-center">
-          <div class="col-4 col-lg-3"><img src="/mybootstrap/assets/img/main/awards/awards_1.png" alt="2022 생활폐기물 감량 · 자원순환 기여 서울시장 표창">
-          </div>
-          <div class="col-4 col-lg-3"><img src="/mybootstrap/assets/img/main/awards/awards_2.png" alt="2023 일회용품 감량 우수사업자 환경부장관 표창">
-          </div>
-          <div class="col-4 col-lg-3"><img src="/mybootstrap/assets/img/main/awards/awards_3.png" alt="2024 한국환경산업기술원장 환경표지 인증 획득">
-          </div>
+  </section><!-- /Stats Section -->
+
+  <section id="awards">
+    <div class="container" data-aos="fade-up">
+      <div class="row justify-content-between justify-content-lg-center">
+        <div class="col-4 col-lg-3"><img src="/mybootstrap/assets/img/main/awards/awards_1.png"
+            alt="2022 생활폐기물 감량 · 자원순환 기여 서울시장 표창">
+        </div>
+        <div class="col-4 col-lg-3"><img src="/mybootstrap/assets/img/main/awards/awards_2.png"
+            alt="2023 일회용품 감량 우수사업자 환경부장관 표창">
+        </div>
+        <div class="col-4 col-lg-3"><img src="/mybootstrap/assets/img/main/awards/awards_3.png"
+            alt="2024 한국환경산업기술원장 환경표지 인증 획득">
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+  <!-- Services Section -->
+  <section id="services" class="services section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>리턴잇 서비스</h2>
-        <p>더 편리하고 건강한 배달 문화</p>
-      </div><!-- End Section Title -->
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>리턴잇 서비스</h2>
+      <p>더 편리하고 건강한 배달 문화</p>
+    </div><!-- End Section Title -->
 
-      <div class="container">
+    <div class="container">
 
-        <div class="row gy-4">
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 align-items-center">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="/mybootstrap/assets/img/main/about.png" class="img-fluid" alt="잇그린 순환체계">
-          </div>
-          <div class="col-lg-6 order-2 order-lg-1 content">
-
-            <h3 class="pb-4">지속 가능한 리턴잇의 순환 시스템</h3>
-            <ul class="mb-4">
-              <li><strong class="me-3">공급</strong> <span>필요한 곳에 친환경 다회용기를 공급합니다</span>
-              </li>
-              <li><strong class="me-3">제공</strong> <span>다회용기에 담긴 음식을 소비자에게 제공합니다</span></li>
-              <li><strong class="me-3">회수</strong> <span>사용한 다회용기는 모두 회수해 갑니다</span></li>
-              <li><strong class="me-3">세척</strong> <span> 회수한 다회용기는 세척 센터에서 깨끗하게 세척합니다</span></li>
-            </ul>
-            <div id="aboutbtns" class="col-md-12 d-flex justify-content-center justify-content-md-start flex-md-row">
-              <a href="" class="col-4 col-md-3">배달앱 주문방법</a>
-              <a href="//returnit-order.kr/" class="col-4 col-md-3 mx-2" target="_blank">리턴잇 사장님</a>
-              <a href="" class="col-4 col-md-3">기업·행사 서비스</a>
-            </div>
-          </div>
-        </div>
+      <div class="row gy-4">
 
       </div>
 
-    </section><!-- /About Section -->
+    </div>
+  </section>
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section mt-0">
+  <!-- About Section -->
+  <section id="about" class="about section">
 
-      <div class="container" data-aos="fade-up">
-        <h4>주요 기관∙기업들이 리턴잇과 함께합니다</h4>
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-6 order-1 order-lg-2">
+          <img src="/mybootstrap/assets/img/main/about.png" class="img-fluid" alt="잇그린 순환체계">
+        </div>
+        <div class="col-lg-6 order-2 order-lg-1 content">
+
+          <h3 class="pb-4">지속 가능한 리턴잇의 순환 시스템</h3>
+          <ul class="mb-4">
+            <li><strong class="me-3">공급</strong> <span>필요한 곳에 친환경 다회용기를 공급합니다</span>
+            </li>
+            <li><strong class="me-3">제공</strong> <span>다회용기에 담긴 음식을 소비자에게 제공합니다</span></li>
+            <li><strong class="me-3">회수</strong> <span>사용한 다회용기는 모두 회수해 갑니다</span></li>
+            <li><strong class="me-3">세척</strong> <span> 회수한 다회용기는 세척 센터에서 깨끗하게 세척합니다</span></li>
+          </ul>
+          <div id="aboutbtns" class="col-md-12 d-flex justify-content-center justify-content-md-start flex-md-row">
+            <a href="" class="col-4 col-md-3">배달앱 주문방법</a>
+            <a href="//returnit-order.kr/" class="col-4 col-md-3 mx-2" target="_blank">리턴잇 사장님</a>
+            <a href="" class="col-4 col-md-3">기업·행사 서비스</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section><!-- /About Section -->
+
+  <!-- Clients Section -->
+  <section id="clients" class="clients section mt-0">
+
+    <div class="container" data-aos="fade-up">
+      <h4>주요 기관∙기업들이 리턴잇과 함께합니다</h4>
+      <div class="swiper init-swiper">
+        <script type="application/json" class="swiper-config">
             {
               "loop": true,
               "speed": 3000,
@@ -284,41 +298,41 @@
               }
             }
           </script>
-          <div class="swiper-wrapper align-items-center"></div>
-
-        </div>
-
-    </section><!-- /Clients Section -->
-
-    <section id="news" class="section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 align-items-center">
-          <div class="col-lg-6 pb-3">
-            <h3>잇그린 뉴스</h3>
-            <ul class="content p-0 m-0">
-
-            </ul>
-          </div>
-          <div class="col-lg-6 pb-3">
-            <h3><a href="//www.returnit.kr/blog">블로그 <i class="bi bi-chevron-right"></i></a></h3>
-            <ul class="content p-0 m-0">
-
-            </ul>
-          </div>
-        </div>
+        <div class="swiper-wrapper align-items-center"></div>
 
       </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section dark-background">
+  </section><!-- /Clients Section -->
 
-      <img src="/mybootstrap/assets/img/main/testimonials/testimonials-bg.jpg" class="testimonials-bg" alt="">
+  <section id="news" class="section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-6 pb-3">
+          <h3>잇그린 뉴스</h3>
+          <ul class="content p-0 m-0">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+          </ul>
+        </div>
+        <div class="col-lg-6 pb-3">
+          <h3><a href="//www.returnit.kr/blog">블로그 <i class="bi bi-chevron-right"></i></a></h3>
+          <ul class="content p-0 m-0">
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials section dark-background">
+
+    <img src="/mybootstrap/assets/img/main/testimonials/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="swiper init-swiper">
+        <script type="application/json" class="swiper-config">
             {
               "loop": true,
               "speed": 600,
@@ -344,42 +358,42 @@
               }
             }
           </script>
-          <h4 class="text-center mb-4">잇그린 사장님들의 솔직 후기</h4>
-          <div class="swiper-wrapper">
+        <h4 class="text-center mb-4">잇그린 사장님들의 솔직 후기</h4>
+        <div class="swiper-wrapper">
 
-          </div>
-          <div class="swiper-pagination"></div>
         </div>
-
+        <div class="swiper-pagination"></div>
       </div>
 
-    </section><!-- /Testimonials Section -->
+    </div>
 
-    <section id="cta">
-      <div class="position-relative">
-        <img src="/mybootstrap/assets/img/main/cta.jpg" alt="배경 이미지" class="position-absolute top-0 start-0 w-100 h-100"
-          style="object-fit: cover;">
-        <div class="position-relative row justify-content-center align-items-center text-center textcontent"
-          style="height: 100%; z-index: 1;">
-          <h2 class="mb-3 text-white">쓰레기 없는 배달 문화<br>지속 가능한 순환 서비스</h2>
-          <h4 class="mb-5 text-white">다회용기 하나당 <br class="d-sm-none">300개 이상의 일회용기가 사라집니다</h4>
-          <a class="btn-cta" href="#">지금 문의하기</a>
-        </div>
-      </div>
-    </section>
-  </main>
+  </section><!-- /Testimonials Section -->
 
-
-  <!-- Modal -->
-  <div class="modal fade" id="step7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-body">
-          <img src="/mybootstrap/assets/img/main/modal.png" alt="잇그린의 7단계 다회용기 세척">
-        </div>
-        
+  <section id="cta">
+    <div class="position-relative">
+      <img src="/mybootstrap/assets/img/main/cta.jpg" alt="배경 이미지" class="position-absolute top-0 start-0 w-100 h-100"
+        style="object-fit: cover;">
+      <div class="position-relative row justify-content-center align-items-center text-center textcontent"
+        style="height: 100%; z-index: 1;">
+        <h2 class="mb-3 text-white">쓰레기 없는 배달 문화<br>지속 가능한 순환 서비스</h2>
+        <h4 class="mb-5 text-white">다회용기 하나당 <br class="d-sm-none">300개 이상의 일회용기가 사라집니다</h4>
+        <a class="btn-cta" href="#">지금 문의하기</a>
       </div>
     </div>
+  </section>
+</main>
+
+
+<!-- Modal -->
+<div class="modal fade" id="step7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="/mybootstrap/assets/img/main/modal.png" alt="잇그린의 7단계 다회용기 세척">
+      </div>
+
+    </div>
   </div>
+</div>
 
 <?php include_once("./layout/bottom.php"); ?>
