@@ -68,6 +68,11 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+  cursor: default;
+}
+
+p {
+  cursor: default;
 }
 
 /* PHP Email Form Messages

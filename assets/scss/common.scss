@@ -53,6 +53,10 @@
   color: #666;
 }
 
+label {
+  cursor: pointer;
+}
+
 .form-check-input[type=radio] {
   --bs-form-check-bg-image: url(/mybootstrap/assets/img/common/formtagcircle.svg);
   background-color: transparent;
@@ -132,24 +136,29 @@
 }
 
 @media (max-width: 649px){
-  .navmenu ul {
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    position: fixed;
-    left: 2rem;
-    right: 2rem;
-    top: unset;
-    bottom: 25px;
-    padding: 10px 90px;
-    margin: 0;
-    border-radius: 50px;
-    
-    overflow: hidden;
-    z-index: 9998;
-    gap: unset;
+  .navmenu {
+    ul {
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style: none;
+      position: fixed;
+      left: 2rem;
+      right: 2rem;
+      top: unset;
+      bottom: 25px;
+      padding: 10px 90px;
+      margin: 0;
+      border-radius: 50px;
+      
+      overflow: hidden;
+      z-index: 9998;
+      gap: unset;
+    }
+    .active {
+      text-decoration: none;
+    }
   }
   .scrolled .navmenu ul {
     background-color: rgba(255, 255, 255, .7);
@@ -168,6 +177,12 @@
   }
   .logo {
     filter: invert(1);
+  }
+  .navmenu .active {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 10px;
+    text-underline-offset: -0.5rem;
   }
 }
 

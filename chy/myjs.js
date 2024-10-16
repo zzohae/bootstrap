@@ -1,13 +1,5 @@
 window.addEventListener('load', function() {
 
-  const video = document.getElementById('bg_video');
-  
-  if (window.innerWidth <= 768) {
-    setTimeout(function() {
-      video.pause();
-    }, 5000);
-  }
-
   fetch('/mybootstrap/data/mydata.json')
     .then(response => {
       if (!response.ok) {
@@ -174,10 +166,18 @@ window.addEventListener('load', function() {
       });
 
       // Popup Trigger
-      const popuptrigger = document.querySelector("#services > div:nth-child(2) > div > div:nth-child(4) > div");
+      const popuptrigger = document.querySelector("#services > div:nth-child(3) > div > div:nth-child(4) > div");
       popuptrigger.innerHTML += `<a class='more servicebtn' type="button" data-bs-toggle="modal" href="#step7">+</a>`;
     })
     .catch(error => {
       console.error('There has been a problem with your fetch operation:', error);
     });
+
+    const video = document.getElementById('bg_video');
+  
+    if (window.innerWidth <= 768) {
+    setTimeout(function() {
+      video.pause();
+      }, 5000);
+    }
 });

@@ -53,6 +53,10 @@
   color: #666;
 }
 
+label {
+  cursor: pointer;
+}
+
 .form-check-input[type=radio] {
   --bs-form-check-bg-image: url(/mybootstrap/assets/img/common/formtagcircle.svg);
   background-color: transparent;
@@ -133,6 +137,9 @@
     z-index: 9998;
     gap: unset;
   }
+  .navmenu .active {
+    text-decoration: none;
+  }
   .scrolled .navmenu ul {
     background-color: rgba(255, 255, 255, 0.7);
   }
@@ -148,6 +155,12 @@
 }
 #index-page header .logo {
   filter: invert(1);
+}
+#index-page header .navmenu .active {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-decoration-thickness: 10px;
+  text-underline-offset: -0.5rem;
 }
 
 #footer #footer-logo {
