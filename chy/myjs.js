@@ -67,6 +67,37 @@ window.addEventListener('load', function() {
       }
       clientsswiper.innerHTML = mybrands;
 
+      setTimeout(() => {
+        const clients_swiper = new Swiper('#clients .swiper', {
+        loop: true,
+        speed: 3000,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false
+        },
+        slidesPerView: 'auto',
+        breakpoints: {
+          320: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+          },
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 80,
+          },
+          992: {
+            slidesPerView: 5,
+            spaceBetween: 120,
+          }
+        }
+      });
+      }, 500);
+      
+
       // Reviews
       const reviews = this.document.querySelector("#testimonials .swiper-wrapper");
       let myreviews = '';
@@ -82,6 +113,34 @@ window.addEventListener('load', function() {
                       </div>`;
       }
       reviews.innerHTML = myreviews;
+
+      setTimeout(() => {
+        const testimonials_swiper = new Swiper('#testimonials .swiper', {
+            loop: true,
+            speed: 600,
+            slidesPerView: 'auto',
+            pagination: {
+                el: '#testimonials .swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 60
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
+        });
+      }, 500);
+    
 
       // News
       const newslist = this.document.querySelector("#news .container .row div:first-child ul");
