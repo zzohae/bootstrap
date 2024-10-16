@@ -30,8 +30,14 @@
   }
 
   h2 span {
-    background: url(/mybootstrap/assets/img/main/returnitbag.png) no-repeat 0 center;
+    background: url(/mybootstrap/assets/img/main/returnitbag.png) no-repeat right 280px center;
     @media (max-width: 1199px) {
+      background-position: 50px center;
+    }
+    @media (max-width: 991px) {
+      background-position: 90px center;
+    }
+    @media (max-width: 767px) {
       background: none;
     }
   }

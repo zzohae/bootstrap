@@ -25,9 +25,19 @@
   height: 520px;
 }
 #hero h2 span {
-  background: url(/mybootstrap/assets/img/main/returnitbag.png) no-repeat 0 center;
+  background: url(/mybootstrap/assets/img/main/returnitbag.png) no-repeat right 280px center;
 }
 @media (max-width: 1199px) {
+  #hero h2 span {
+    background-position: 50px center;
+  }
+}
+@media (max-width: 991px) {
+  #hero h2 span {
+    background-position: 90px center;
+  }
+}
+@media (max-width: 767px) {
   #hero h2 span {
     background: none;
   }
