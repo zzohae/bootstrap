@@ -14,7 +14,7 @@
 
   <!-- Fonts -->
   <link rel="stylesheet" as="style" crossorigin
-    href="//cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    href="//cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
   <!-- Vendor CSS Files -->
   <link href="/mybootstrap/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

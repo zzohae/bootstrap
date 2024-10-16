@@ -1,4 +1,13 @@
 window.addEventListener('load', function() {
+
+  const video = document.getElementById('bg_video');
+  
+  if (window.innerWidth <= 768) {
+    setTimeout(function() {
+      video.pause();
+    }, 5000);
+  }
+
   fetch('/mybootstrap/data/mydata.json')
     .then(response => {
       if (!response.ok) {
@@ -31,7 +40,7 @@ window.addEventListener('load', function() {
       for (const x of servicesdata) {
         myservices += `<div class="col-lg-6" data-aos="fade-up" data-aos-delay="${x.delay}">
                         <div class="service-item position-relative" style="background: url('${x.bgsrc}') no-repeat center; background-size: cover;">
-                          <h3>${x.h3text}</h3>
+                          <h4 class="fs-4">${x.h3text}</h4>
                           <p>${x.ptext}</p>
                         </div>
                       </div>`;
@@ -104,7 +113,7 @@ window.addEventListener('load', function() {
       for (const x of newreviews) {
         myreviews += `<div class="swiper-slide">
                         <div class="testimonial-item">
-                          <div class="d-flex align-items-center mb-2">
+                          <div class="d-flex align-items-center mb-3">
                             <img src="${x.image}" class="testimonial-img" alt="${x.owner} 후기">
                             <h3 class="mb-0 ms-3">${x.owner}</h3>
                           </div>
@@ -131,11 +140,11 @@ window.addEventListener('load', function() {
             breakpoints: {
                 576: {
                     slidesPerView: 2,
-                    spaceBetween: 60
+                    spaceBetween: 20
                 },
                 992: {
                     slidesPerView: 3,
-                    spaceBetween: 40
+                    spaceBetween: 30
                 }
             }
         });

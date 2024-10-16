@@ -6,6 +6,7 @@
     color: rgba($color: #ffffff, $alpha: 0.7);
     border-color: rgba(255, 255, 255, 0.5);
     border-radius: 50px;
+    font-weight: 400;
     
     &:hover {
       color: #ffffff;
@@ -15,6 +16,7 @@
       color: #333;
       background-color: var(--accent-color);
       border-color: transparent;
+      font-weight: 600;
 
       &:hover {
         color: #333;
@@ -208,7 +210,6 @@
 
   > div > h4 {
     margin-bottom: 1.5rem;
-    font-size: 24px;
   }
 }
 
@@ -218,7 +219,6 @@
   }
 
   h3 {
-    font-weight: 700;
     display: flex;
     align-items: center;
 
@@ -241,7 +241,7 @@
 
     a {
       font-size: 20px;
-      font-weight: 600;
+      font-weight: 500;
       color: var(--default-color);
     }
 
@@ -249,6 +249,12 @@
       color: #666;
       font-weight: 300;
     }
+  }
+}
+
+#testimonials {
+  div > div > h2 {
+    font-weight: 600;
   }
 }
 
@@ -266,7 +272,7 @@
     h2 {
       font-size: 50px;
       font-weight: bolder;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 
       @media (max-width: 768px) {
         font-size: 32px !important;

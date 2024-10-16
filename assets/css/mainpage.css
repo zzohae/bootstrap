@@ -6,6 +6,7 @@
   color: rgba(255, 255, 255, 0.7);
   border-color: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
+  font-weight: 400;
 }
 #orderTab .nav-link:hover {
   color: #ffffff;
@@ -15,6 +16,7 @@
   color: #333;
   background-color: var(--accent-color);
   border-color: transparent;
+  font-weight: 600;
 }
 #orderTab .nav-link.active:hover {
   color: #333;
@@ -185,14 +187,12 @@
 }
 #clients > div > h4 {
   margin-bottom: 1.5rem;
-  font-size: 24px;
 }
 
 #news ul, #news li {
   list-style: none;
 }
 #news h3 {
-  font-weight: 700;
   display: flex;
   align-items: center;
 }
@@ -212,12 +212,16 @@
 }
 #news li a {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--default-color);
 }
 #news li span {
   color: #666;
   font-weight: 300;
+}
+
+#testimonials div > div > h2 {
+  font-weight: 600;
 }
 
 #cta {
@@ -234,7 +238,7 @@
 #cta div h2 {
   font-size: 50px;
   font-weight: bolder;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 @media (max-width: 768px) {
   #cta div h2 {
