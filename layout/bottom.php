@@ -66,7 +66,6 @@
 <script src="/mybootstrap/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="//code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
-<script src="/mybootstrap/assets/vendor/php-email-form/validate.js"></script>
 <script src="/mybootstrap/assets/vendor/aos/aos.js"></script>
 <script src="/mybootstrap/assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="/mybootstrap/assets/vendor/glightbox/js/glightbox.min.js"></script>
