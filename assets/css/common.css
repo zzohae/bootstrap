@@ -137,9 +137,6 @@ label {
     z-index: 9998;
     gap: unset;
   }
-  .navmenu .active {
-    text-decoration: none;
-  }
   .scrolled .navmenu ul {
     background-color: rgba(255, 255, 255, 0.7);
   }
@@ -149,6 +146,18 @@ label {
     border-radius: 50px;
   }
 }
+#index-page header .navmenu a:after {
+  content: " ";
+  position: absolute;
+  width: 80px;
+  height: 10px;
+  background-color: transparent;
+  bottom: 1.5rem;
+  left: calc(50% - 40px);
+  border-radius: var(--bs-border-radius);
+  transition: background-color 0.3s ease-in-out;
+  z-index: -1;
+}
 #index-page header .navmenu a,
 #index-page header .navmenu a:focus {
   color: #fff;
@@ -156,11 +165,9 @@ label {
 #index-page header .logo {
   filter: invert(1);
 }
-#index-page header .navmenu .active {
-  text-decoration: underline;
-  text-decoration-color: var(--accent-color);
-  text-decoration-thickness: 10px;
-  text-underline-offset: -0.5rem;
+#index-page header a.active:after {
+  content: " ";
+  background-color: var(--accent-color);
 }
 
 #footer #footer-logo {

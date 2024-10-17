@@ -168,6 +168,31 @@ window.addEventListener('load', function() {
       // Popup Trigger
       const popuptrigger = document.querySelector("#services > div:nth-child(3) > div > div:nth-child(4) > div");
       popuptrigger.innerHTML += `<a class='more servicebtn' type="button" data-bs-toggle="modal" href="#step7">+</a>`;
+
+      const sectids = data.navidata.map(item => item.href);
+
+      const offsets = sectids.map((sectid, index) => {
+        const section = document.querySelector(sectid);
+        const nowOffset = section ? section.offsetTop : 0;
+        const nextOffset = sectids[index + 1] ? document.querySelector(sectids[index + 1]).offsetTop : document.body.scrollHeight;
+        return {
+          nowOffset,
+          nextOffset
+        };
+      });
+
+      const navLinks = document.querySelectorAll('#header .navmenu ul li a');
+
+      window.addEventListener('scroll', function() {
+        const scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+        offsets.forEach((sectionData, index) => {
+          if (scrollPos >= sectionData.nowOffset - 80 && scrollPos < sectionData.nextOffset - 80) {
+            navLinks[index].classList.add('active');
+          } else {
+            navLinks[index].classList.remove('active');
+          }
+        });
+      });
     })
     .catch(error => {
       console.error('There has been a problem with your fetch operation:', error);
