@@ -28,6 +28,7 @@
   <link href="/mybootstrap/assets/css/main.css?ver=<?php echo time(); ?>" rel="stylesheet">
   <link rel="stylesheet" href="/mybootstrap/assets/css/common.min.css">
   <link rel="stylesheet" href="/mybootstrap/assets/css/mainpage.min.css">
+  <link rel="stylesheet" href="/mybootstrap/assets/css/FaQpage.min.css">
 
 </head>
 

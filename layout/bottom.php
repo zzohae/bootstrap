@@ -35,7 +35,7 @@
           <li>이메일: info@itgreen.co</li>
           <li><a href="//pf.kakao.com/_QEPAb">카카오톡: 리턴잇 사장님</a></li>
           <li><a href="//pf.kakao.com/_xfBFHK">카카오톡: 리턴잇 고객센터</a></li>
-          <li><a href="">자주 묻는 질문</a></li>
+          <li><a href="./faq.html">자주 묻는 질문</a></li>
         </ul>
       </div>
 
@@ -74,7 +74,8 @@
 <script src="/mybootstrap/assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
 <!-- Main JS File -->
-<script src="/mybootstrap/chy/myjs.js?ver=<?php echo time(); ?>"></script>
+<script src="/mybootstrap/chy/mainpage.js?ver=<?php echo time(); ?>"></script>
+<script src="/mybootstrap/chy/faqpage.js?ver=<?php echo time(); ?>"></script>
 <script src="/mybootstrap/assets/js/main.js?ver=<?php echo time(); ?>"></script>
 <script src="/mybootstrap/chy/selectbox.js"></script>
 </body>

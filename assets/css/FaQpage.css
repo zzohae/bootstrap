@@ -1,0 +1,37 @@
+#faqcontent h3 {
+  border-radius: var(--bs-border-radius);
+  background-color: #eee;
+  font-weight: 600;
+}
+#faqcontent .content dl dt {
+  gap: 1rem;
+  font-weight: 600;
+}
+#faqcontent .content dl dt:first-child {
+  border-top: 0 !important;
+}
+#faqcontent .content dl dt i {
+  transition: transform 0.3s ease;
+}
+#faqcontent .content dl dt:hover {
+  cursor: pointer;
+}
+#faqcontent .content dl dt.expand i {
+  transform: rotate(90deg);
+}
+#faqcontent .content dl dt.expand + dd {
+  padding: 0 2rem 2rem;
+  display: block !important;
+  line-height: 2;
+  font-weight: 400;
+  color: #454545;
+}
+
+#CScenter > div {
+  background-color: #fff;
+  border: 5px solid var(--accent-color);
+  border-radius: var(--bs-border-radius);
+}
+#CScenter > div ul, #CScenter > div li {
+  list-style: none;
+}

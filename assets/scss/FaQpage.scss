@@ -1,0 +1,48 @@
+#faqcontent {
+  h3 {
+    border-radius: var(--bs-border-radius);
+    background-color: #eee;
+    font-weight: 600;
+  }
+  .content {
+    dl dt {
+      gap: 1rem;
+      font-weight: 600;
+  
+      &:first-child {
+        border-top: 0 !important;
+      }
+  
+      i {
+        transition: transform 0.3s ease;
+      }
+  
+      &:hover {
+        cursor: pointer;
+      }
+      
+      &.expand {
+        i {
+          transform: rotate(90deg);
+        }
+        + dd {
+          padding: 0 2rem 2rem;
+          display: block !important;
+          line-height: 2;
+          font-weight: 400;
+          color: #454545;
+        }
+      }
+    }
+  }
+}
+
+#CScenter > div {
+  background-color: #fff;
+  border: 5px solid var(--accent-color);
+  border-radius: var(--bs-border-radius);
+
+  ul, li {
+    list-style: none;
+  }
+}
