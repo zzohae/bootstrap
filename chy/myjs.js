@@ -181,7 +181,7 @@ window.addEventListener('load', function() {
         };
       });
 
-      const navLinks = document.querySelectorAll('#header .navmenu ul li a');
+      const navLinks = document.querySelectorAll('#index-page .navmenu ul li a');
 
       window.addEventListener('scroll', function() {
         const scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;

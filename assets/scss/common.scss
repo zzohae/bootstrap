@@ -168,16 +168,18 @@ label {
 }
 // index page header
 #index-page header {
-  .navmenu a:after {
-      content: ' ';
+  .navmenu a span:after {
+      content: '';
       position: absolute;
-      width: 80px;
+      width: auto;
       height: 10px;
       background-color: transparent;
-      bottom: 1.5rem;
-      left: calc(50% - 40px);
-      border-radius: var(--bs-border-radius);
-      transition: background-color 0.3s ease-in-out;
+      bottom: 1.2rem;
+      left: .5rem;
+      right: .5rem;
+      border-radius: 2px;
+      transform: translateX(-100%);
+      transition: transform 0.5s ease-in-out;
       z-index: -1;
   }
   .navmenu a,
@@ -187,9 +189,18 @@ label {
   .logo {
     filter: invert(1);
   }
-  a.active:after {
-    content: ' ';
-      background-color: var(--accent-color);
+  a.active span:after {
+    transform: translateX(0);
+    background-color: var(--accent-color);
+  }
+  .navmenu ul li:first-child a.active::before {
+    content: '';
+    background: var(--background-color);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -100%
   }
 }
 
