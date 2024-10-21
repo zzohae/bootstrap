@@ -38,11 +38,26 @@
 }
 
 #CScenter > div {
-  background-color: #fff;
-  border: 5px solid var(--accent-color);
+  background-color: var(--accent-color);
   border-radius: var(--bs-border-radius);
+  width: 80%;
 
   ul, li {
     list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contactinfo {
+    text-align: center;
+    h5 {
+      margin-bottom: 1.5rem;
+    }
+    li {
+      margin-bottom: .5rem;
+    }
+    a {
+      color: var(--default-color);
+    }
   }
 }

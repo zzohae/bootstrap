@@ -192,37 +192,48 @@ window.addEventListener('load', function() {
 
       if (navLinks) {
         const sectids = Array.from(navLinks).map(link => link.getAttribute('href'));
-        const offsets = sectids.map((sectid, index) => {
-            const section = document.querySelector(sectid);
-            const nowOffset = section ? section.offsetTop : 0;
-            const nextOffset = sectids[index + 1] ? document.querySelector(sectids[index + 1]).offsetTop : document.body.scrollHeight;
-            return {
-                nowOffset,
-                nextOffset
-            };
-        });
-
+        let offsets = [];
+    
+        function calculateOffsets() {
+            offsets = sectids.map((sectid, index) => {
+                const section = document.querySelector(sectid);
+                const nowOffset = section ? section.offsetTop : 0;
+                const nextOffset = sectids[index + 1] ? document.querySelector(sectids[index + 1]).offsetTop : document.body.scrollHeight;
+                return {
+                    nowOffset,
+                    nextOffset
+                };
+            });
+        }
+    
+        calculateOffsets(); // 초기 오프셋 계산
+    
         let ticking = false;
-
+    
         window.addEventListener('scroll', function() {
             if (!ticking) {
                 window.requestAnimationFrame(() => {
                     const scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
-
+    
                     offsets.forEach((sectionData, index) => {
                         if (scrollPos >= sectionData.nowOffset - 80 && scrollPos < sectionData.nextOffset - 80) {
-                            navLinks[index].classList.add('active');
+                            navLinks[index].classList.add('here');
                         } else {
-                            navLinks[index].classList.remove('active');
+                            navLinks[index].classList.remove('here');
                         }
                     });
-
+    
                     ticking = false;
                 });
                 ticking = true;
             }
         });
-      }
+    
+        window.addEventListener('resize', function() {
+            calculateOffsets();
+        });
+    }
+    
     })
     .catch(error => {
       console.error('There has been a problem with your fetch operation:', error);
