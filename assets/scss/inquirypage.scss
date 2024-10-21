@@ -1,0 +1,126 @@
+#inquirypage {
+  .form-control {
+    background: transparent;
+    border: 1px solid #999;
+    color: #454545;
+    line-height: 2;
+    padding: 1rem 1.5rem;
+
+    &:focus {
+      border-color: var(--accent-color);
+      background: transparent;
+      box-shadow: none;
+      color: #454545;
+    }
+
+    &:placeholder {
+      color: #454545;
+    }
+    &:-moz-placeholder {
+      color: #454545;
+    }
+    &:-ms-input-placeholder {
+      color: #454545;
+    }
+    &::-webkit-input-placeholder {
+      color: #454545;
+    }
+  }
+
+    .other-input {
+      display: inline-block;
+      width: auto;
+      padding: 0 0.3rem;
+      line-height: 1.5;
+      &:placeholder{
+        color: #454545;
+      }
+      &:-moz-placeholder {
+        color: #454545;
+      }
+      &:-ms-input-placeholder {
+        color: #454545;
+      }
+      &::-webkit-input-placeholder {
+        color: #454545;
+      }
+  }
+
+  #submit {
+    background-color: var(--accent-color);
+    border: none;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: var(--bs-border-radius);
+    width: 100%;
+  }
+  .form-check-input[type=radio] {
+    --bs-form-check-bg-image: url(/mybootstrap/assets/img/common/formtagcircle_invert.svg);
+    border-color: #999;
+  }
+  
+  .form-check-input[type=checkbox] {
+    --bs-form-check-bg-image: url(/mybootstrap/assets/img/common/formtagcircle_invert.svg);
+    border-color: #999;
+  }
+  .dateselector {
+    cursor: pointer;
+  
+    input {
+      position: relative;
+      background: url('/mybootstrap/assets/img/main/calendar-check_dark.svg') no-repeat right 10px center !important;
+  
+      &::-webkit-calendar-picker-indicator,
+      &::-webkit-inner-spin-button {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        appearance: none;
+        width: 100%;
+      }
+    }
+  }
+  #orderTab {
+    border-bottom: none;
+    gap: .5rem;
+  
+    .nav-link{
+      color: rgba($color: #454545, $alpha: 0.7);
+      border-color: rgba($color: #999, $alpha: 0.5);
+      border-radius: 50px;
+      font-weight: 400;
+      
+      &:hover {
+        color: rgba($color: #454545, $alpha: 1);
+        background-color: rgb(255, 253, 222);
+      }
+      &.active {
+        color: #333;
+        background-color: var(--accent-color);
+        border-color: transparent;
+        font-weight: 600;
+  
+        &:hover {
+          color: #333 !important;
+          border-color: transparent;
+        }
+      }
+    }
+  }
+  #inquiryType-button {
+    width: 100%;
+    line-height: 2;
+    background: rgb(255, 253, 222);
+    color: #454545;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: var(--bs-border-radius);
+    border: 1px solid #999;
+    &:focus {
+      border: 1px solid var(--accent-color);
+    }
+  }
+}

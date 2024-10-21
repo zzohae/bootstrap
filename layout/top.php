@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="/mybootstrap/assets/css/common.min.css">
   <link rel="stylesheet" href="/mybootstrap/assets/css/mainpage.min.css">
   <link rel="stylesheet" href="/mybootstrap/assets/css/FaQpage.min.css">
+  <link rel="stylesheet" href="/mybootstrap/assets/css/inquirypage.min.css">
 
 </head>
 
