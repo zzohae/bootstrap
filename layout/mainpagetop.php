@@ -50,7 +50,7 @@
 
       <div>
         <a class="btn-getstarted" href="//app.returnit.co.kr/">반납하기</a>
-        <a class="btn-getstarted" href="#">문의하기</a>
+        <a class="btn-getstarted" href="./inquiry.html">문의하기</a>
       </div>
 
 
