@@ -126,8 +126,8 @@ label {
     justify-content: center;
     list-style: none;
     position: fixed;
-    left: 2rem;
-    right: 2rem;
+    left: 1.5rem;
+    right: 1.5rem;
     top: unset;
     bottom: 25px;
     padding: 10px 90px;
@@ -141,7 +141,7 @@ label {
     background-color: rgba(255, 255, 255, 0.7);
   }
   .scroll-top {
-    right: 3rem;
+    right: 2rem;
     bottom: 35px;
     border-radius: 50px;
   }
