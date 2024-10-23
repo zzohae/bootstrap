@@ -4,7 +4,7 @@ window.addEventListener('load', function() {
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
-      }
+      };
       return response.json();
     })
     .then(data => {
@@ -23,7 +23,7 @@ window.addEventListener('load', function() {
         mytag += `<li class="position-relative"><a href="${x.href}" target="${x._target}">
                     <img src="${x.icon}" class="img-fluid d-xl-none" alt="${x.atext}" />
                     <span>${x.atext}</span></a></li>`;
-      }
+      };
       mynavi.innerHTML = mytag;
 
       // Services
@@ -38,9 +38,9 @@ window.addEventListener('load', function() {
                             <p>${x.ptext}</p>
                           </div>
                         </div>`;
-        }
+        };
         serviceitem.innerHTML = myservices;
-      }
+      };
 
       // Stats
       const statsitem = this.document.querySelector("#statswrap");
@@ -61,10 +61,10 @@ window.addEventListener('load', function() {
                           <img src="${x.imgurl}" alt="${x.spantext}">
                         </div>
                       </div>`;
-      }
+      };
       statsitem.innerHTML = mystats;
       new PureCounter();
-      }
+      };
 
       // Clients Swiper
       const clientsswiper = this.document.querySelector("#clients div.swiper div.swiper-wrapper");
@@ -72,9 +72,9 @@ window.addEventListener('load', function() {
         let mybrands = '';
         for (const x of clientsdata) {
           mybrands += `<div class="swiper-slide"><img src="/mybootstrap/assets/img/main/clients/${x.brandlogo}.png" class="img-fluid" alt="${x.brandname}"></div>`;
-        }
+        };
         clientsswiper.innerHTML = mybrands;
-      }
+      };
 
       setTimeout(() => {
         const clients_swiper = new Swiper('#clients .swiper', {
@@ -121,9 +121,9 @@ window.addEventListener('load', function() {
                             <p>${x.reviewtext}</p>
                           </div>
                         </div>`;
-        }
+        };
         reviews.innerHTML = myreviews;
-      }
+      };
 
       setTimeout(() => {
         const testimonials_swiper = new Swiper('#testimonials .swiper', {
@@ -159,9 +159,9 @@ window.addEventListener('load', function() {
         let mynews = '';
         for (const x of newsdata) {
           mynews += `<li><span>${x.date}</span><a href="${x.link}" class="d-block text-truncate">${x.title}</a></li>`;
-        }
+        };
         newslist.innerHTML = mynews;
-      }
+      };
 
       // Blog
       const bloglist = this.document.querySelector("#news .container .row div:last-child ul");
@@ -169,9 +169,9 @@ window.addEventListener('load', function() {
         let myblog = '';
         for (const x of blogdata) {
           myblog += `<li><span>${x.date}</span><a href="${x.link}" class="d-block text-truncate">${x.title}</a></li>`;
-        }
+        };
         bloglist.innerHTML = myblog;
-      }
+      };
 
       // Date Selector
       const dateInput = document.querySelector('.dateselector input');
@@ -179,13 +179,13 @@ window.addEventListener('load', function() {
         document.querySelector('.dateselector').addEventListener('click', () => {
           dateInput.focus();
         });
-      }
+      };
 
       // Popup Trigger
       const popuptrigger = document.querySelector("#services > div:nth-child(3) > div > div:nth-child(4) > div");
       if (popuptrigger){
         popuptrigger.innerHTML += `<a class='more servicebtn' type="button" data-bs-toggle="modal" href="#step7">+</a>`;
-      }
+      };
 
       // Index page 스크롤시 네비게이션 표시 애니메이션
       const navLinks = document.querySelectorAll('#index-page .navmenu ul li a');
@@ -204,7 +204,7 @@ window.addEventListener('load', function() {
                     nextOffset
                 };
             });
-        }
+        };
     
         calculateOffsets(); // 초기 오프셋 계산
     
@@ -226,7 +226,7 @@ window.addEventListener('load', function() {
                     ticking = false;
                 });
                 ticking = true;
-            }
+            };
         });
     
         window.addEventListener('resize', function() {
@@ -250,11 +250,41 @@ window.addEventListener('load', function() {
             } else {
                 video.play();
             }
-        }
-    }
+        };
+    };
 
     mobilestop();
 
     window.addEventListener('resize', mobilestop);
 
+    document.querySelectorAll('input[type="tel"]').forEach(telenum => {
+      telenum.addEventListener('input', function () {
+          let input = telenum.value.replace(/[^0-9]/g, '');
+  
+          if (input.length >= 10) {
+            input = input.replace(/^(02)(\d{3,4})(\d{4})$/, '$1-$2-$3');
+            input = input.replace(/(\d{3})(\d{3,4})(\d{4})$/, '$1-$2-$3');
+          } else if (input.length > 6) {
+            input = input.replace(/^(02)(\d{3,4})(\d{4})$/, '$1-$2-$3');
+            input = input.replace(/(\d{3})(\d{3,4})$/, '$1-$2');
+          }
+  
+          telenum.value = input;
+      });
+  });
+
+  const targetform = document.getElementById('DCinquiry');
+  if ( targetform ){
+    targetform.addEventListener('submit', function(event) {
+      const checkboxes = document.querySelectorAll('input[name="app[]"]');
+      const isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+  
+      if (!isChecked) {
+          event.preventDefault();
+          alert('하나 이상의 배달앱을 선택해 주세요.');
+      }
+    });
+  };
+  
+  
 });
