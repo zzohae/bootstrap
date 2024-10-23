@@ -60,9 +60,6 @@
   --bs-form-check-bg-image: url(/mybootstrap/assets/img/common/formtagcircle_invert.svg);
   border-color: #999;
 }
-#inquirypage .dateselector {
-  cursor: pointer;
-}
 #inquirypage .dateselector input {
   position: relative;
   background: url("/mybootstrap/assets/img/main/calendar-check_dark.svg") no-repeat right 10px center !important;

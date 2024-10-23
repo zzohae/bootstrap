@@ -119,9 +119,6 @@
   border: 1px solid var(--accent-color);
 }
 
-.dateselector {
-  cursor: pointer;
-}
 .dateselector input {
   position: relative;
   background: url("/mybootstrap/assets/img/main/calendar-check.svg") no-repeat right 10px center !important;
