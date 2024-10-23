@@ -286,5 +286,22 @@ window.addEventListener('load', function() {
     });
   };
   
+  const startDateInput = document.getElementById('startDate');
+  const endDateInput = document.getElementById('endDate');
+  const today = new Date();
+  
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, '0');
+  const day = String(today.getDate()).padStart(2, '0');
+  const formattedDate = `${year}-${month}-${day}`;
+
+  startDateInput.setAttribute('min', formattedDate);
+  endDateInput.setAttribute('min', formattedDate);
+
+  startDateInput.addEventListener('change', function() {
+      const startDate = startDateInput.value;
+      endDateInput.value = '';
+      endDateInput.setAttribute('min', startDate);
+  });
   
 });
