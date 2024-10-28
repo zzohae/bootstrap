@@ -31,11 +31,19 @@
   <link rel="stylesheet" href="/mybootstrap/assets/css/FaQpage.min.css">
   <link rel="stylesheet" href="/mybootstrap/assets/css/inquirypage.min.css">
 
+  <?php 
+  if(defined('_ADM_')){  
+  echo'<link rel="stylesheet" href="/mybootstrap/assets/css/adminpage.min.css">';
+  }
+  
+  ?>
+
 </head>
 
 <body>
 
-  <header id="header" class="header d-flex align-items-center fixed-top position-relative">
+  <header id="header" class="header d-flex align-items-center fixed-top   <?php 
+  if(!defined('_ADM_')){ echo  'position-relative'; }?>">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo me-lg-0 col-2">
@@ -50,10 +58,11 @@
         <!-- <i class="mobile-nav-toggle d-xl-none bi bi-list"></i> -->
       </nav>
 
-      <div>
+      <?php if(!defined('_ADM_')){ echo
+      '<div>
         <a class="btn-getstarted" href="//app.returnit.co.kr/">반납하기</a>
         <a class="btn-getstarted" href="./inquiry.html">문의하기</a>
-      </div>
+      </div>'; }?>
 
 
     </div>

@@ -6,6 +6,9 @@ $conn = connectToDatabase();
 if ($conn->connect_error) {
   die("연결 실패: " . $conn->connect_error);
 }
+
+echo '<head><link rel="stylesheet" href="../assets/css/adminlist.min.css"></head>';
+
   $DC_sql = "SELECT * FROM delivery_container_inquiries ORDER BY created_at DESC";
   $B2B_sql = "SELECT * FROM B2B_inquiries ORDER BY created_at DESC";
   $event_sql = "SELECT * FROM event_inquiries ORDER BY created_at DESC";
@@ -15,6 +18,7 @@ if ($conn->connect_error) {
 
   if ($DC_result->num_rows > 0) {
       ?>
+      <div id='admbody'>
       <div id='admheader'>
         <form action="logout.php" method="post">
           <button id='logout' type="submit">로그아웃</button>
@@ -120,142 +124,6 @@ if ($conn->connect_error) {
   } else {
       echo "NO DATA";
   }
-
-
+?> </div> <?php
 $conn->close();
 ?>
-
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: #333;
-    }
-    ol, ul, li {
-        list-style: none;
-    }
-    a {
-        text-decoration: none;
-        color: unset;
-    }
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: #eee;
-        overflow: scroll;
-    }
-    .container {
-        margin: 2rem auto 0;
-        width: 80%;
-        height: auto;
-        border-radius: 10px;
-        padding: 1.5rem 1.5rem 1rem;
-        position: relative;
-        background: #fdfdfd;
-    }
-    h1 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        font-weight: bolder;
-    }
-    h2 {
-        font-size: 1rem;
-        font-weight: normal;
-        float: right;
-        text-align: right;
-        position: absolute;
-        right: 2rem;
-        top: 2.4rem;
-    }
-    #admheader {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      width: 100%;
-      height: 80px;
-      background-color: #fff;
-      padding: 0 10%;
-    }
-    #logout {
-    display: inline-block;
-    background-color: rgb(255,241,0);
-    color: #333;
-    font-size: 16px;
-    font-weight: 600;
-    padding: .5rem 2rem;
-    border-radius: 20px;
-    border: none;
-    }
-
-    #logout:hover {
-      background-color: #FFDD00;
-      color: #333;
-    }
-
-    .storelist {
-        padding: 1rem 0 0;
-        border-top: 1px solid #ddd;
-    }
-    .storelist>form>ul>ul {
-        display: flex;
-        justify-content: space-between;
-        padding: .5rem;
-        border-radius: 8px;
-        gap: .5rem;
-    }
-    .storelist>form>ul>ul:hover {
-        background-color: #eee;
-    }
-    input[type="checkbox"] {
-        margin-right: 1rem;
-    }
-    .storelist>form>ul>ul>li {
-        color: #999;
-    }
-    .storelist>form>ul>ul>li:first-child {
-        width: 200px;
-        font-weight: 600;
-        color: #454545;
-    }
-    .admin {
-        margin-top: 1rem;
-        padding-top: 1rem;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: .5rem;
-        border-top: 1px solid #ddd;
-    }
-    .btn {
-        padding: .5rem 1rem;
-        border: none;
-        border-radius: 8px;
-        background-color: #c1dfff;
-        display: inline-block;
-        font-size: 14px;
-        text-align: center;
-    }
-    .deletebtn {
-        background-color: red;
-        cursor: pointer;
-    }
-    .longtext {
-      width: 300px;
-    }
-
-    .shorttext {
-      width: 150px;
-    }
-
-    .contactnum {
-      width: 150px;
-    }
-
-    .contactmail {
-      width: 300px;
-    }
-
-
-</style>

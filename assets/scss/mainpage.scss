@@ -185,7 +185,8 @@
   a:focus {
     display: inline-block;
     color: #333;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
     padding: 20px 0;
     border-radius: 15px;
     transition: 0.3s;
@@ -202,6 +203,10 @@
     color: var(--default-color);
     background: rgb(255, 253, 222);
   }
+}
+
+.faqlink {
+  text-decoration: underline 3px var(--accent-color);
 }
 
 #clients {

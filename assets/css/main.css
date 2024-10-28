@@ -50,13 +50,13 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--default-color);
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
   text-decoration: none;
 }
 

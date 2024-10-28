@@ -14,12 +14,12 @@
           <a href="" class="naverblog"><img src="/mybootstrap/assets/img/common/naverblog.svg" alt="네이버 블로그"></a>
         </div>
         <div class="footer-contact pt-3">
-          <p>(주)잇그린 | 대표 김선 | 서울특별시 강남구 봉은사로 24길 46</p>
-          <p>사업자등록번호 527-87-01859</p>
-          <p>통신판매업 신고번호 제 2021-서울서초-1075</p>
-          <p>개인정보보호책임자 : 백선웅</p>
-          <p><strong>Phone:</strong> <span>(+82)2-1670-0916</span></p>
-          <p><strong>&copy; 2024 itgreen. Co.,Ltd.</strong></p>
+          <p>(주)잇그린 | 대표 김뫄뫄 | 서울특별시 구로구 새말로 97 테크노마트 6F 46</p>
+          <p>사업자등록번호 000-00-00000</p>
+          <p>통신판매업 신고번호 제 2021-서울솨솨-0000</p>
+          <p>개인정보보호책임자 : 김이박</p>
+          <p><strong>Phone:</strong> <span>(+82)2-2111-2000</span></p>
+          <p><strong>&copy; KDT 3기 조해연. All rights reserved.</strong></p>
         </div>
         <div class="footer-links">
           <ul>
@@ -31,10 +31,10 @@
       <div class="col-lg-4 col-6 footer-links customer-service">
         <h4>고객센터</h4>
         <ul>
-          <li>전화: 1670-0916</li>
-          <li>이메일: info@itgreen.co</li>
-          <li><a href="//pf.kakao.com/_QEPAb">카카오톡: 리턴잇 사장님</a></li>
-          <li><a href="//pf.kakao.com/_xfBFHK">카카오톡: 리턴잇 고객센터</a></li>
+          <li>전화: 02-2111-2000</li>
+          <li>이메일: badahaeyeoncho@gmail.com</li>
+          <li><a href="#">카카오톡: 리턴잇 사장님</a></li>
+          <li><a href="//open.kakao.com/o/sieJvYWg">카카오톡: 리턴잇 고객센터</a></li>
           <li><a href="./faq.html">자주 묻는 질문</a></li>
         </ul>
       </div>
@@ -56,8 +56,7 @@
 </footer>
 
 <!-- Scroll Top -->
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-  class="bi bi-arrow-up-short"></i></a>
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <!-- Preloader -->
 <div id="preloader"></div>

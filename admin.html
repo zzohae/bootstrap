@@ -1,53 +1,13 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>로그인</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-      }
-      .container {
-        width: 30%;
-        height: auto;
-        margin: 0 auto;
-        border: 1px solid black;
-        padding: 50px 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      h2 {
-        margin-bottom: 2rem;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-      }
-      .form-group {
-        display: block;
-      }
-      label {
-        width: 70px;
-        display: inline-block;
-      }
-      button {
-        margin-top: 1rem;
-      }
-    </style>
-</head>
-<body>
-  <section>
-    <div class="container">
-      <h2>관리자 로그인</h2>
+<?php
+define('_ADM_', true);
+include_once('./layout/top.php');
+?>
+  <section id="loginmain">
+    <div class="containerMain">
+      <div class="subhead">
+        <h1><?php include_once("./layout/svg/logo.html"); ?></h1>
+        <h2>관리자 로그인</h2>
+      </div>
       <form action="admin/admlogin.php" method="POST" id="login">
         <div class="form-group">
           <label for="username">아이디</label>
